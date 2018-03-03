@@ -1,9 +1,13 @@
 <?php
 
 Assets::add_css(array(
-    'custom.css',
+   'style.css',
+    'themes/all-themes.css',
     'bootstrap.css',
+    'custom.css',
+    'old-bootsrap/bootstrap.css',
     'bootstrap-responsive.css',
+   
 ));
 
 if (isset($shortcut_data) && is_array($shortcut_data['shortcut_keys'])) {
@@ -24,7 +28,7 @@ if (isset($shortcut_data) && is_array($shortcut_data['shortcut_keys'])) {
     <?php
     /* Modernizr is loaded before CSS so CSS can utilize its features */
     ?>
-	<script src="<?php echo Template::theme_url('js/modernizr-2.5.3.js'); ?>"></script>
+    <script src="<?php echo Template::theme_url('js/modernizr-2.5.3.js'); ?>"></script>
 	<?php echo Assets::css(null, true); ?>
 </head>
 <body class="desktop">

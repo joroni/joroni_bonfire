@@ -6,3 +6,15 @@
 body {
     font-family: 'Roboto', sans-serif !important;
 }
+
+.btn,
+button,
+input[type="button"] {
+    text-transform: uppercase !important;
+    background-image: none !important;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 75px !important;
+}
