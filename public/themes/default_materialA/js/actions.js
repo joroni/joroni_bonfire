@@ -7,9 +7,9 @@ $(document).ready(function() {
     });
 
     checkLoginPage();
-    checkMobile();
+    //  checkMobile();
     $(window).resize(function() {
-        checkMobile();
+        ///    checkMobile();
     });
 
 });
