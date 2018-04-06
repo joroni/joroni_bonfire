@@ -5,6 +5,19 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 body {
     font-family: 'Roboto', Arial, Tahoma, sans-serif !important;
+    /* font-family: "Helvetica Nue", Helvetica, Arial, sans-serif !important;*/
+    font-size: 14px;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 300;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004) !important;
+}
+
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+    position: relative;
+    left: 0;
+    opacity: 1;
 }
 
 .btn,
@@ -12,6 +25,47 @@ button,
 input[type="button"] {
     text-transform: uppercase !important;
     background-image: none !important;
+}
+
+.alert-info {
+    color: #3a87ad !important;
+}
+
+@media (max-width: 979px) {
+    .nav-collapse .dropdown-menu {
+        position: relative !important;
+        /* top: auto; */
+        left: auto;
+        display: none;
+        float: none;
+        max-width: none;
+        padding: 0;
+        top: 25px !important;
+        margin: 0 15px;
+        background-color: transparent;
+        border: none;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+    .body {
+        padding-top: 20px;
+        margin-top: 0 !important;
+    }
+}
+
+.subnav {
+    background-image: none;
+}
+
+#user-menu>.btn-group>a {
+    text-shadow: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
 }
 
 .dropdown-menu {

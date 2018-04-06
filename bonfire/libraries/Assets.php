@@ -1373,6 +1373,11 @@ function img_path()
     return Assets::assets_url('image');
 }
 
+function images_path()
+{
+    return Assets::assets_url('images');
+}
+
 /**
  * Returns full site url to assets javascript folder.
  *
