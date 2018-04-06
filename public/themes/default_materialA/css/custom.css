@@ -116,6 +116,10 @@ input[type="button"] {
     top: 75px !important;
 }
 
+.form-group .form-control {
+    width: 100% !important;
+}
+
 @media (max-width: 767px) {
     .navbar {
         position: fixed;

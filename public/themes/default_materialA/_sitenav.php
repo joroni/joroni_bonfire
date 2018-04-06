@@ -3,7 +3,7 @@
 <div class="container-fluid">
             <div class="navbar-header">
 <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
-<a href="javascript:void(0);" class="bars hidden"></a>
+<a href="javascript:void(0);" class="bars"></a>
 <a class="navbar-brand"><?php e(class_exists('Settings_lib') ? settings_item('site.title') : 'Bonfire'); ?></a>
 </div>
 <div class="collapse navbar-collapse" id="navbar-collapse">
