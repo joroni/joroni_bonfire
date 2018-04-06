@@ -5,6 +5,12 @@ $(document).ready(function() {
         $('body').toggleClass('rs-closed');
         // $(".nav").toggleClass("hiddenRight");
     });
+    $("input, textarea, select").addClass("form-control");
+    $(".control-group").addClass("form-group");
+    $(".span12").addClass("col-sm-12").removeClass("span12");
+    $(".span6").addClass("col-sm-6").removeClass("span6");
+
+    $(".control-group").wrapInner("<div class='form-line'></div>");
 
     checkLoginPage();
     //  checkMobile();
