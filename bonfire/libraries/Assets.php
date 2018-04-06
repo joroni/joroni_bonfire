@@ -1370,7 +1370,7 @@ function css_path()
  */
 function img_path()
 {
-    return Assets::assets_url('image');
+    return Assets::assets_url('images');
 }
 
 function images_path()

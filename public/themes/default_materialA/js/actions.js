@@ -6,11 +6,20 @@ $(document).ready(function() {
         // $(".nav").toggleClass("hiddenRight");
     });
     $("input, textarea, select").addClass("form-control");
-    $(".control-group").addClass("form-group");
+    $(".control-group").addClass("form-group").removeClass("control-group");
     $(".span12").addClass("col-sm-12").removeClass("span12");
     $(".span6").addClass("col-sm-6").removeClass("span6");
+    $(".form-group .controls").wrapInner("<div class='form-line'></div>");
 
-    $(".control-group").wrapInner("<div class='form-line'></div>");
+    labelToPlaceHer();
+    setTimeout(function() {
+
+        $(".form-line").each(function() {
+            $(this).removeClass("focused");
+
+        });
+    }, 3000);
+
 
     checkLoginPage();
     //  checkMobile();
@@ -20,7 +29,17 @@ $(document).ready(function() {
 
 });
 
-
+function labelToPlaceHer() {
+    $("form :input").each(function(index, elem) {
+        var eId = $(elem).attr("id");
+        var label = null;
+        if (eId && (label = $(elem).parents("form").find("label[for=" + eId + "]")).length == 1) {
+            console.log(eId);
+            $(elem).attr("placeholder", $(label).html());
+            $(label).remove();
+        }
+    });
+}
 
 
 function checkMobile() {
@@ -79,19 +98,19 @@ function setSkinListHeightAndScroll(isFirstTime) {
     var height = $(window).height() - ($('.navbar').innerHeight() + $('.right-sidebar .nav-tabs').outerHeight());
     var $el = $('.demo-choose-skin');
 
-    /*    if (!isFirstTime) {
-          $el.slimScroll({ destroy: true }).height('auto');
-          $el.parent().find('.slimScrollBar, .slimScrollRail').remove();
-      }
+    if (!isFirstTime) {
+        $el.slimScroll({ destroy: true }).height('auto');
+        $el.parent().find('.slimScrollBar, .slimScrollRail').remove();
+    }
 
     $el.slimscroll({
-          height: height + 'px',
-          color: 'rgba(0,0,0,0.5)',
-          size: '6px',
-          alwaysVisible: false,
-          borderRadius: '0',
-          railBorderRadius: '0'
-      });*/
+        height: height + 'px',
+        color: 'rgba(0,0,0,0.5)',
+        size: '6px',
+        alwaysVisible: false,
+        borderRadius: '0',
+        railBorderRadius: '0'
+    });
 }
 
 //Setting tab content set height and show scroll

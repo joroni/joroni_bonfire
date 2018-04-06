@@ -120,6 +120,20 @@ input[type="button"] {
     width: 100% !important;
 }
 
+.form-line {
+    min-height: 35px;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+}
+
+.sidebar .user-info .image img {
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -ms-border-radius: 50% !important;
+    border-radius: 50% !important;
+    vertical-align: bottom !important;
+}
+
 @media (max-width: 767px) {
     .navbar {
         position: fixed;
