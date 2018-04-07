@@ -1,35 +1,46 @@
 $(document).ready(function() {
     $("body").addClass("theme-red");
     $(".table").addClass("table-responsive");
-    $(".navbar-header .bars, .overlay").click(function() {
-        $('body').toggleClass('rs-closed');
-        // $(".nav").toggleClass("hiddenRight");
-    });
+    /* $(".navbar-header .bars, .overlay").click(function() {
+         $('body').toggleClass('rs-closed');
+         // $(".nav").toggleClass("hiddenRight");
+     });*/
     $("input, textarea, select").addClass("form-control");
     $(".control-group").addClass("form-group").removeClass("control-group");
     $(".span12").addClass("col-sm-12").removeClass("span12");
-    $(".span6").addClass("col-sm-6").removeClass("span6");
-    $(".form-group .controls").wrapInner("<div class='form-line'></div>");
+    $(".span6").addClass("col-sm-12").removeClass("span6");
+    var textBasedInput = $(".form-group .controls input, .form-group .controls textarea");
+    $(textBasedInput).parent().wrapInner("<div class='form-line'></div>");
 
-    labelToPlaceHer();
-    setTimeout(function() {
+    labelToPlaceHolder();
 
-        $(".form-line").each(function() {
-            $(this).removeClass("focused");
 
-        });
-    }, 3000);
-
+    focusHighlight();
 
     checkLoginPage();
-    //  checkMobile();
-    $(window).resize(function() {
-        ///    checkMobile();
-    });
+
 
 });
 
-function labelToPlaceHer() {
+
+function focusHighlight() {
+    /* setTimeout(function() {
+
+         $(".form-line").each(function() {
+             $(this).removeClass("focused");
+
+         });
+     }, 2000);*/
+    $(".form-control").focus(function() {
+        $(this).parent().addClass("focused");
+    });
+
+    $(".form-control").focusout(function() {
+        $(this).parent().removeClass("focused");
+    });
+}
+
+function labelToPlaceHolder() {
     $("form :input").each(function(index, elem) {
         var eId = $(elem).attr("id");
         var label = null;
@@ -68,7 +79,7 @@ function checkLoginPage() {
 
 $(function() {
     skinChanger();
-    //activateNotificationAndTasksScroll();
+    activateNotificationAndTasksScroll();
 
     setSkinListHeightAndScroll(true);
     setSettingListHeightAndScroll(true);
@@ -118,19 +129,19 @@ function setSettingListHeightAndScroll(isFirstTime) {
     var height = $(window).height() - ($('.navbar').innerHeight() + $('.right-sidebar .nav-tabs').outerHeight());
     var $el = $('.right-sidebar .demo-settings');
 
-    /*  if (!isFirstTime) {
-          $el.slimScroll({ destroy: true }).height('auto');
-          $el.parent().find('.slimScrollBar, .slimScrollRail').remove();
-      }
+    if (!isFirstTime) {
+        $el.slimScroll({ destroy: true }).height('auto');
+        $el.parent().find('.slimScrollBar, .slimScrollRail').remove();
+    }
 
-      $el.slimscroll({
-          height: height + 'px',
-          color: 'rgba(0,0,0,0.5)',
-          size: '6px',
-          alwaysVisible: false,
-          borderRadius: '0',
-          railBorderRadius: '0'
-      });*/
+    $el.slimscroll({
+        height: height + 'px',
+        color: 'rgba(0,0,0,0.5)',
+        size: '6px',
+        alwaysVisible: false,
+        borderRadius: '0',
+        railBorderRadius: '0'
+    });
 }
 
 //Activate notification and task dropdown on top right menu

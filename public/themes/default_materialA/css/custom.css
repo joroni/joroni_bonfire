@@ -104,6 +104,10 @@ ul.nav.nav-pills.pull-right.collapseable {
     color: unset;
 }
 
+.form-group button.btn.dropdown-toggle.btn-default {
+    display: none;
+}
+
 .btn,
 button,
 input[type="button"] {
