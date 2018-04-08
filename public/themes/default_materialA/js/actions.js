@@ -1,4 +1,14 @@
-$(document).ready(function() {
+$(function() {
+    skinChanger();
+    activateNotificationAndTasksScroll();
+
+    setSkinListHeightAndScroll(true);
+    setSettingListHeightAndScroll(true);
+    $(window).resize(function() {
+        setSkinListHeightAndScroll(false);
+        setSettingListHeightAndScroll(false);
+    });
+
     $("body").addClass("theme-red");
     $(".table").addClass("table-responsive");
     /* $(".navbar-header .bars, .overlay").click(function() {
@@ -77,17 +87,6 @@ function checkLoginPage() {
 
 
 
-$(function() {
-    skinChanger();
-    activateNotificationAndTasksScroll();
-
-    setSkinListHeightAndScroll(true);
-    setSettingListHeightAndScroll(true);
-    $(window).resize(function() {
-        setSkinListHeightAndScroll(false);
-        setSettingListHeightAndScroll(false);
-    });
-});
 
 //Skin changer
 function skinChanger() {

@@ -6,7 +6,7 @@
 <a href="javascript:void(0);" class="bars"></a>
 <a class="navbar-brand"><?php e(class_exists('Settings_lib') ? settings_item('site.title') : 'Bonfire'); ?></a>
 </div>
-<div class="collapse navbar-collapse" id="navbar-collapse">
+<div class="navbar-collapse" id="navbar-collapse">
     <ul class="nav navbar-nav navbar-right">
         <li <?php echo check_class('home'); ?>><a href="<?php echo site_url(); ?>"><?php e(lang('bf_home')); ?></a></li>
         <?php if (empty($current_user)) : ?>
@@ -25,22 +25,36 @@
         <aside id="leftsidebar" class="sidebar">
             <!-- User Info -->
             <div class="user-info">
-                <div class="image">
-                    <img src="<?php echo img_path(); ?>images/user.png" width="48" height="48" alt="User">
+            <div class="nav pull-right" id="user-menu">
+                        <div class="btn-group">
+                            <a href="<?php echo site_url(SITE_AREA . '/settings/users/edit'); ?>" id="tb_email" class="btn dark" title="<?php echo lang('bf_user_settings'); ?>">
+                                <?php
+                                $userDisplayName = isset($current_user->display_name) && ! empty($current_user->display_name) ? $current_user->display_name : ($this->settings_lib->item('auth.use_usernames') ? $current_user->username : $current_user->email);
+                                echo $userDisplayName;
+                                ?>
+                            </a>
+                        </div>
+                    </div>
+                <div class="image" style="width:48px; height:48px;">
+              
+                     <?php echo gravatar_link($current_user->email, 96, null, $userDisplayName); ?>
+                                       
+                   <!-- <img src="<?/*php echo img_path(); */?>images/user.png" width="48" height="48" alt="User"> -->
                 </div>
                 <div class="info-container">
-                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">John Doe</div>
-                    <div class="email">john.doe@example.com</div>
+                
+                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo $userDisplayName; ?></div>
+                    <div class="email"> <?php e($current_user->email); ?></div>
                     <div class="btn-group user-helper-dropdown">
                         <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                         <ul class="dropdown-menu pull-right">
-                            <li><a href="javascript:void(0);" class=" waves-effect waves-block"><i class="material-icons">person</i>Profile</a></li>
+                            <li><a href="<?php echo site_url(SITE_AREA . '/settings/users/edit'); ?>" class=" waves-effect waves-block"><i class="material-icons">person</i>Profile</a></li>
                             <li role="seperator" class="divider"></li>
-                            <li><a href="javascript:void(0);" class=" waves-effect waves-block"><i class="material-icons">group</i>Followers</a></li>
+                           <!-- <li><a href="javascript:void(0);" class=" waves-effect waves-block"><i class="material-icons">group</i>Followers</a></li>
                             <li><a href="javascript:void(0);" class=" waves-effect waves-block"><i class="material-icons">shopping_cart</i>Sales</a></li>
                             <li><a href="javascript:void(0);" class=" waves-effect waves-block"><i class="material-icons">favorite</i>Likes</a></li>
-                            <li role="seperator" class="divider"></li>
-                            <li><a href="javascript:void(0);" class=" waves-effect waves-block"><i class="material-icons">input</i>Sign Out</a></li>
+                            <li role="seperator" class="divider"></li>-->
+                            <li><a href="<?php echo site_url('logout'); ?>" class=" waves-effect waves-block"><i class="material-icons">input</i>Sign Out</a></li>
                         </ul>
                     </div>
                 </div>

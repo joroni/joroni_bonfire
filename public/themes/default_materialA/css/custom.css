@@ -31,6 +31,15 @@ body {
     float: left;
 }
 
+.image img {
+    width: 48px;
+    height: 48px;
+}
+
+.navbar-inner {
+    background-color: #000 !important;
+}
+
 .nav.pull-right.hiddenRight {
     margin-right: -250px;
 }
