@@ -6,8 +6,7 @@
     <?php
     echo isset($content) ? $content : Template::content();
 ?>
-</div>
-</section>
+
    <?php
     echo theme_view('footer', array('show' => false));
 ?>

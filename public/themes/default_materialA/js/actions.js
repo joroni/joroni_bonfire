@@ -1,26 +1,66 @@
-$(document).ready(function() {
+$(function() {
+    skinChanger();
+    activateNotificationAndTasksScroll();
+
+    setSkinListHeightAndScroll(true);
+    setSettingListHeightAndScroll(true);
+    $(window).resize(function() {
+        setSkinListHeightAndScroll(false);
+        setSettingListHeightAndScroll(false);
+    });
+
     $("body").addClass("theme-red");
     $(".table").addClass("table-responsive");
-    $(".navbar-header .bars, .overlay").click(function() {
-        $('body').toggleClass('rs-closed');
-        // $(".nav").toggleClass("hiddenRight");
-    });
+    /* $(".navbar-header .bars, .overlay").click(function() {
+         $('body').toggleClass('rs-closed');
+         // $(".nav").toggleClass("hiddenRight");
+     });*/
     $("input, textarea, select").addClass("form-control");
-    $(".control-group").addClass("form-group");
+    $(".control-group").addClass("form-group").removeClass("control-group");
     $(".span12").addClass("col-sm-12").removeClass("span12");
-    $(".span6").addClass("col-sm-6").removeClass("span6");
+    $(".span6").addClass("col-sm-12").removeClass("span6");
+    var textBasedInput = $(".form-group .controls input, .form-group .controls textarea");
+    $(textBasedInput).parent().wrapInner("<div class='form-line'></div>");
 
-    $(".control-group").wrapInner("<div class='form-line'></div>");
+    labelToPlaceHolder();
+
+
+    focusHighlight();
 
     checkLoginPage();
-    //  checkMobile();
-    $(window).resize(function() {
-        ///    checkMobile();
-    });
+
 
 });
 
 
+function focusHighlight() {
+    /* setTimeout(function() {
+
+         $(".form-line").each(function() {
+             $(this).removeClass("focused");
+
+         });
+     }, 2000);*/
+    $(".form-control").focus(function() {
+        $(this).parent().addClass("focused");
+    });
+
+    $(".form-control").focusout(function() {
+        $(this).parent().removeClass("focused");
+    });
+}
+
+function labelToPlaceHolder() {
+    $("form :input").each(function(index, elem) {
+        var eId = $(elem).attr("id");
+        var label = null;
+        if (eId && (label = $(elem).parents("form").find("label[for=" + eId + "]")).length == 1) {
+            console.log(eId);
+            $(elem).attr("placeholder", $(label).html());
+            $(label).remove();
+        }
+    });
+}
 
 
 function checkMobile() {
@@ -47,17 +87,6 @@ function checkLoginPage() {
 
 
 
-$(function() {
-    skinChanger();
-    //activateNotificationAndTasksScroll();
-
-    setSkinListHeightAndScroll(true);
-    setSettingListHeightAndScroll(true);
-    $(window).resize(function() {
-        setSkinListHeightAndScroll(false);
-        setSettingListHeightAndScroll(false);
-    });
-});
 
 //Skin changer
 function skinChanger() {
@@ -79,19 +108,19 @@ function setSkinListHeightAndScroll(isFirstTime) {
     var height = $(window).height() - ($('.navbar').innerHeight() + $('.right-sidebar .nav-tabs').outerHeight());
     var $el = $('.demo-choose-skin');
 
-    /*    if (!isFirstTime) {
-          $el.slimScroll({ destroy: true }).height('auto');
-          $el.parent().find('.slimScrollBar, .slimScrollRail').remove();
-      }
+    if (!isFirstTime) {
+        $el.slimScroll({ destroy: true }).height('auto');
+        $el.parent().find('.slimScrollBar, .slimScrollRail').remove();
+    }
 
     $el.slimscroll({
-          height: height + 'px',
-          color: 'rgba(0,0,0,0.5)',
-          size: '6px',
-          alwaysVisible: false,
-          borderRadius: '0',
-          railBorderRadius: '0'
-      });*/
+        height: height + 'px',
+        color: 'rgba(0,0,0,0.5)',
+        size: '6px',
+        alwaysVisible: false,
+        borderRadius: '0',
+        railBorderRadius: '0'
+    });
 }
 
 //Setting tab content set height and show scroll
@@ -99,19 +128,19 @@ function setSettingListHeightAndScroll(isFirstTime) {
     var height = $(window).height() - ($('.navbar').innerHeight() + $('.right-sidebar .nav-tabs').outerHeight());
     var $el = $('.right-sidebar .demo-settings');
 
-    /*  if (!isFirstTime) {
-          $el.slimScroll({ destroy: true }).height('auto');
-          $el.parent().find('.slimScrollBar, .slimScrollRail').remove();
-      }
+    if (!isFirstTime) {
+        $el.slimScroll({ destroy: true }).height('auto');
+        $el.parent().find('.slimScrollBar, .slimScrollRail').remove();
+    }
 
-      $el.slimscroll({
-          height: height + 'px',
-          color: 'rgba(0,0,0,0.5)',
-          size: '6px',
-          alwaysVisible: false,
-          borderRadius: '0',
-          railBorderRadius: '0'
-      });*/
+    $el.slimscroll({
+        height: height + 'px',
+        color: 'rgba(0,0,0,0.5)',
+        size: '6px',
+        alwaysVisible: false,
+        borderRadius: '0',
+        railBorderRadius: '0'
+    });
 }
 
 //Activate notification and task dropdown on top right menu

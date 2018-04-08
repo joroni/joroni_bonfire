@@ -31,6 +31,15 @@ body {
     float: left;
 }
 
+.image img {
+    width: 48px;
+    height: 48px;
+}
+
+.navbar-inner {
+    background-color: #000 !important;
+}
+
 .nav.pull-right.hiddenRight {
     margin-right: -250px;
 }
@@ -104,6 +113,10 @@ ul.nav.nav-pills.pull-right.collapseable {
     color: unset;
 }
 
+.form-group button.btn.dropdown-toggle.btn-default {
+    display: none;
+}
+
 .btn,
 button,
 input[type="button"] {
@@ -118,6 +131,20 @@ input[type="button"] {
 
 .form-group .form-control {
     width: 100% !important;
+}
+
+.form-line {
+    min-height: 35px;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+}
+
+.sidebar .user-info .image img {
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -ms-border-radius: 50% !important;
+    border-radius: 50% !important;
+    vertical-align: bottom !important;
 }
 
 @media (max-width: 767px) {

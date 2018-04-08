@@ -104,8 +104,8 @@ $.AdminBSB.leftSideBar = {
         });
 
         //Set Waves
-        //   Waves.attach('.menu .list a', ['waves-block']);
-        // Waves.init();
+        Waves.attach('.menu .list a', ['waves-block']);
+        Waves.init();
     },
     setMenuHeight: function(isFirstTime) {
         if (typeof $.fn.slimScroll != 'undefined') {
@@ -123,10 +123,10 @@ $.AdminBSB.leftSideBar = {
             });
 
             //Scroll active menu item when page load, if option set = true
-            if ($.AdminBSB.options.leftSideBar.scrollActiveItemWhenPageLoad) {
-                var activeItemOffsetTop = $('.menu .list li.active')[0].offsetTop
-                if (activeItemOffsetTop > 150) $el.slimscroll({ scrollTo: activeItemOffsetTop + 'px' });
-            }
+            /* if ($.AdminBSB.options.leftSideBar.scrollActiveItemWhenPageLoad) {
+                 var activeItemOffsetTop = $('.menu .list li.active')[0].offsetTop();
+                 if (activeItemOffsetTop > 150) $el.slimscroll({ scrollTo: activeItemOffsetTop + 'px' });
+             }*/
         }
     },
     checkStatuForResize: function(firstTime) {
@@ -333,8 +333,8 @@ $.AdminBSB.dropdownMenu = {
             });
 
             //Set Waves
-            //  Waves.attach('.dropdown-menu li a', ['waves-block']);
-            // Waves.init();
+            Waves.attach('.dropdown-menu li a', ['waves-block']);
+            Waves.init();
         },
         dropdownEffect: function(target) {
             var effectIn = $.AdminBSB.options.dropdownMenu.effectIn,

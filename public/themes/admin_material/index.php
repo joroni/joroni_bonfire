@@ -5,7 +5,7 @@ Assets::add_js(array('bootstrap.min.js', 'jwerty.js'), 'external', true);
 echo theme_view('header');
 
 ?>
-<div class="body">
+<div class="body"  id="main">
 	<div class="container-fluid">
 	    <?php
             echo Template::message();
