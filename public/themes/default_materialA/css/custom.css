@@ -21,6 +21,10 @@ body {
     padding: 10px 7px;
 }
 
+#leftsidebar #user-menu {
+    display: none;
+}
+
 .nav.pull-right {
     float: right;
     margin-right: 0;
@@ -109,10 +113,6 @@ ul.nav.nav-pills.pull-right.collapseable {
     transform: scale(1);
 }
 
-.alert {
-    color: unset;
-}
-
 .form-group button.btn.dropdown-toggle.btn-default {
     display: none;
 }
@@ -137,6 +137,10 @@ input[type="button"] {
     min-height: 35px;
     position: relative;
     border-bottom: 1px solid #ddd;
+}
+
+.form-actions .form-control {
+    margin: 40px 0 20px 0;
 }
 
 .sidebar .user-info .image img {

@@ -12,7 +12,7 @@
 	
 	<?php echo Assets::js(); ?>
 
-	<script src="<?php echo Template::theme_url('js/global.js'); ?>"></script>
+
 	<script src="<?php echo Template::theme_url('js/actions.js'); ?>"></script>
 </body>
 </html>

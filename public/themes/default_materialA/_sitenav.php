@@ -20,6 +20,23 @@
     </div> 
 </div>
 </nav>
+<?php if (!empty($current_user)) : ?>
+<style>
+section.content {
+    margin: 100px 15px 0 315px;
+  
+}
+</style>
+<?php endif; ?>
+<?php if (empty($current_user)) : ?>
+<style>
+section.content {
+    margin: 100px 15px 0 15px;
+   
+}
+</style>
+<?php endif; ?>
+<?php if (!empty($current_user)) : ?>
 <section>
         <!-- Left Sidebar -->
         <aside id="leftsidebar" class="sidebar">
@@ -48,7 +65,8 @@
                     <div class="btn-group user-helper-dropdown">
                         <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                         <ul class="dropdown-menu pull-right">
-                            <li><a href="<?php echo site_url(SITE_AREA . '/settings/users/edit'); ?>" class=" waves-effect waves-block"><i class="material-icons">person</i>Profile</a></li>
+                        <li> <a href="<?php echo site_url('users/profile'); ?>" class=" waves-effect waves-block"><i class="material-icons">person</i>Profile</a></li>
+                          <!--  <li><a href="<?php echo site_url(SITE_AREA . '/settings/users/edit'); ?>" class=" waves-effect waves-block"><i class="material-icons">person</i>Profile</a></li>-->
                             <li role="seperator" class="divider"></li>
                            <!-- <li><a href="javascript:void(0);" class=" waves-effect waves-block"><i class="material-icons">group</i>Followers</a></li>
                             <li><a href="javascript:void(0);" class=" waves-effect waves-block"><i class="material-icons">shopping_cart</i>Sales</a></li>
@@ -82,6 +100,7 @@
                     </li>
                     <?php else : ?>
                     <li <?php echo check_method('profile'); ?>>
+                    
                         <a href="<?php echo site_url('users/profile'); ?>">
                         <i class="material-icons">person</i>
                         <span><?php e(lang('bf_user_settings')); ?></span>
@@ -90,10 +109,10 @@
                     <li>
                     <a href="<?php echo site_url('logout'); ?>">
                   
-                    <span><?php e(lang('bf_action_logout')); ?></span>
+                        <span><?php e(lang('bf_action_logout')); ?></span>
                     </a>
                     </li>
-        <?php endif; ?>
+                     <?php endif; ?>
                 </ul><div class="slimScrollBar" style="background: rgba(0, 0, 0, 0.5); width: 4px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 0px; z-index: 99; right: 1px; height: 159.382px;"></div><div class="slimScrollRail" style="width: 4px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 0px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
             </div>
             <!-- #Menu -->
@@ -108,6 +127,8 @@
             </div>
             <!-- #Footer -->
         </aside>
+</section>
+        <?php endif; ?>
         <!-- #END# Left Sidebar -->
       <!-- Right Sidebar -->
       <aside id="rightsidebar" class="right-sidebar">
