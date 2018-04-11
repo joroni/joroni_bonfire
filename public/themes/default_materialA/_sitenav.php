@@ -15,7 +15,9 @@
         <li <?php echo check_method('profile'); ?>><a href="<?php echo site_url('users/profile'); ?>"><?php e(lang('bf_user_settings')); ?></a></li>
         <li><a href="<?php echo site_url('logout'); ?>"><?php e(lang('bf_action_logout')); ?></a></li>
         <?php endif; ?>
-        <li class="pull-right"><a href="javascript:void(0);" class="js-right-sidebar" data-close="true"><i class="material-icons">more_vert</i></a></li>
+        <?php if ( has_permission('Bonfire.UI.View') && has_permission('Bonfire.UI.Manage') ): ?>
+         <li class="pull-right"><a href="javascript:void(0);" class="js-right-sidebar" data-close="true"><i class="material-icons">more_vert</i></a></li>
+         <?php endif; ?>
     </ul>
     </div> 
 </div>
@@ -131,6 +133,10 @@ section.content {
         <?php endif; ?>
         <!-- #END# Left Sidebar -->
       <!-- Right Sidebar -->
+
+       <?php if ( has_permission('Bonfire.UI.View') && has_permission('Bonfire.UI.Manage') ): ?>
+                                   
+				  
       <aside id="rightsidebar" class="right-sidebar">
             <ul class="nav nav-tabs tab-nav-right" role="tablist">
                 <li role="presentation" class="active"><a href="#skins" data-toggle="tab">SKINS</a></li>
@@ -271,6 +277,7 @@ section.content {
                     </div>
                 </div>
             </div>
-        </aside>
+        </aside>   <?php endif; ?>
         <!-- #END# Right Sidebar -->
     </section>
+ 

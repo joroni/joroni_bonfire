@@ -1,3 +1,6 @@
+$(document).ready(function() {
+    $('input[type="text"], input[type="password"]').attr('autocomplete', 'off');
+});
 $(function() {
     skinChanger();
     activateNotificationAndTasksScroll();
@@ -15,12 +18,15 @@ $(function() {
          $('body').toggleClass('rs-closed');
          // $(".nav").toggleClass("hiddenRight");
      });*/
+
+
     $("input, textarea, select").addClass("form-control");
     $(".control-group").addClass("form-group").removeClass("control-group");
     $(".span12").addClass("col-sm-12").removeClass("span12");
     $(".span6").addClass("col-sm-12").removeClass("span6");
     var textBasedInput = $(".form-group .controls input, .form-group .controls textarea");
     $(textBasedInput).parent().wrapInner("<div class='form-line'></div>");
+
 
     labelToPlaceHolder();
 
@@ -31,6 +37,8 @@ $(function() {
 
 
 });
+
+
 
 
 function focusHighlight() {

@@ -1,5 +1,10 @@
-* {
+div {
     border-radius: 0 !important;
+}
+
+.circle {
+    -ms-border-radius: 50% !important;
+    border-radius: 50% !important;
 }
 
 .alert,
