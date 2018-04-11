@@ -157,6 +157,10 @@ input[type="button"] {
         left: 0;
         top: 0;
     }
+    body {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 
