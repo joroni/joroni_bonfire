@@ -145,10 +145,6 @@ ul.nav.nav-pills.pull-right.collapseable {
     display: none;
 }
 
-.navbar {
-    min-height: 30px !important;
-}
-
 a.btn.btn-navbar {
     background: none;
 }
@@ -194,17 +190,6 @@ input[type="button"] {
     .dropdown-menu li,
     .dropdown-menu li li {
         width: 100%;
-    }
-    .pull-right {
-        margin-right: 20px;
-    }
-    .navbar .navbar-toggle {
-        text-decoration: none;
-        color: #fff;
-        width: 20px;
-        height: 20px;
-        margin-top: -4px;
-        margin-right: 40px;
     }
 }
 

@@ -9,12 +9,12 @@ $(function() {
     });
 });
 
-
+/*
 $(".btn-navbar").click(function() {
     $(this).toggleClass("collapsed");
     $(".nav-collapse").toggleClass("in").css("height", "auto");
 });
-
+*/
 
 function checkLoginPage() {
     if ($('#login > form').length !== 0) {

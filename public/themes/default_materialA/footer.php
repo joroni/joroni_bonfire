@@ -15,11 +15,11 @@
 	 <!-- Bootstrap Core Js -->
      <script src="<?php echo Template::theme_url('plugins/jquery/jquery.min.js'); ?>"></script>
 
-    <?php echo Assets::js(); ?>
+  
 
       <!-- Bootstrap Core Js -->
       <script src="<?php echo Template::theme_url('plugins/bootstrap/js/bootstrap.js'); ?>"></script>
-
+  
     <!-- Select Plugin Js -->
     <script src="<?php echo Template::theme_url('plugins/bootstrap-select/js/bootstrap-select.js'); ?>"></script>
 
@@ -34,6 +34,6 @@
 
   <script src="<?php echo Template::theme_url('js/admin.js'); ?>"></script>
     <script src="<?php echo Template::theme_url('js/actions.js'); ?>"></script>
-  
+    <?php echo Assets::js(); ?>
 </body>
 </html>
