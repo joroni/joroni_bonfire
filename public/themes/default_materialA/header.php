@@ -20,12 +20,13 @@ Assets::add_js($inline, 'inline');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<?php e(isset($meta_description) ? $meta_description : ''); ?>">
     <meta name="author" content="<?php e(isset($meta_author) ? $meta_author : ''); ?>">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+    <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">-->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     
@@ -34,9 +35,9 @@ Assets::add_js($inline, 'inline');
     echo Assets::js('modernizr-2.5.3.js');
     ?>
     <?php echo Assets::css(); ?>
-    <link rel="shortcut icon" href="favicon.ico">
+   
 </head>
-<body class="ls-closed theme-black">
+<body class="ls-closed">
         <!-- Page Loader -->
     <div class="page-loader-wrapper">
         <div class="loader">
