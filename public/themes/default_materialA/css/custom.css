@@ -1,5 +1,10 @@
-* {
+div {
     border-radius: 0 !important;
+}
+
+.circle {
+    -ms-border-radius: 50% !important;
+    border-radius: 50% !important;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
@@ -117,6 +122,14 @@ ul.nav.nav-pills.pull-right.collapseable {
     display: none;
 }
 
+.navbar {
+    min-height: 30px !important;
+}
+
+a.btn.btn-navbar {
+    background: none;
+}
+
 .btn,
 button,
 input[type="button"] {
@@ -151,6 +164,16 @@ input[type="button"] {
     vertical-align: bottom !important;
 }
 
+@media (max-width: 979px) {
+    .nav-collapse .open>.dropdown-menu {
+        display: table-row-group !important;
+    }
+    .dropdown-menu li,
+    .dropdown-menu li li {
+        width: 100%;
+    }
+}
+
 @media (max-width: 767px) {
     .navbar {
         position: fixed;
@@ -160,6 +183,11 @@ input[type="button"] {
     body {
         padding-left: 0;
         padding-right: 0;
+    }
+    .navbar-inverse .nav li.dropdown>.dropdown-toggle .caret {
+        border-top-color: #999999;
+        border-bottom-color: #999999;
+        float: right;
     }
 }
 
