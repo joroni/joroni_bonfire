@@ -1,7 +1,7 @@
 <?php
 
 
-Assets::add_css(array( 'bootstrap.css', 'style.css','bootstrap-responsive.min.css','materialize.css','themes/all-themes.css','custom.css'));
+Assets::add_css(array( 'bootstrap.css','bootstrap-responsive.min.css', 'style.css','materialize.css','themes/all-themes.css','custom.css'));
 
 //Assets::add_js(array('bootstrap.min.js', 'admin.js', 'actions.js'));
 
