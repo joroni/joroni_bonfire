@@ -34,7 +34,11 @@ div {
 
 .alert,
 .alert h4 {
-    color: #c09853 !important;
+    color: #c09853;
+}
+
+.alert.alert-warning {
+    color: #333!important;
 }
 
 .alert-success {

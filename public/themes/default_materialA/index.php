@@ -29,6 +29,8 @@
                     <div class="container-fluid">
             <?php
             echo isset($content) ? $content : Template::content();
+
+            $this->load->helper('categories/categories');
             ?>
                 </div>
     </section>

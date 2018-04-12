@@ -1,5 +1,6 @@
 $(document).ready(function() {
     $('input[type="text"], input[type="password"]').attr('autocomplete', 'off');
+    $("body").addClass("theme-blue-grey");
 });
 $(function() {
     skinChanger();
@@ -12,7 +13,7 @@ $(function() {
         setSettingListHeightAndScroll(false);
     });
 
-    $("body").addClass("theme-red");
+
     $(".table").addClass("table-responsive");
     /* $(".navbar-header .bars, .overlay").click(function() {
          $('body').toggleClass('rs-closed');
