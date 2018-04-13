@@ -81,7 +81,18 @@ input[type="button"] {
 }
 
 .subnav {
-    background-image: none;
+    width: 100%;
+    background-color: transparent !important;
+    background-image: none !important;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-bottom: 0px solid #c5c5c5 !important;
+    border-top: 0px solid #163355 !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    z-index: 5;
 }
 
 #user-menu>.btn-group>a {

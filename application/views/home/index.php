@@ -4,12 +4,12 @@
 	<p class="lead">Kickstart your CodeIgniter applications and save yourself 100s of hours of development time.<br/>That means you make more money.</p>
 
 	<?php if (isset($current_user->email)) : ?>
-		<a href="<?php echo site_url(SITE_AREA) ?>" class="btn btn-large btn-success">Admin</a>
+		<a href="<?php echo site_url(SITE_AREA) ?>" class="btn btn-large btn-puma">Admin</a>
 	<?php else :?>
-		<a href="<?php echo site_url(LOGIN_URL); ?>" class="btn btn-large btn-primary"><?php echo lang('bf_action_login'); ?></a>
+		<a href="<?php echo site_url(LOGIN_URL); ?>" class="btn btn-large btn-puma"><?php echo lang('bf_action_login'); ?></a>
 	<?php endif;?>
 
-	<a href="<?php echo site_url('/docs') ?>" class="btn btn-large btn-info">Docs</a>
+	<a href="<?php echo site_url('/docs') ?>" class="btn btn-large btn-puma">Docs</a>
 </div>
 
 <hr />
