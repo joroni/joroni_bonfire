@@ -8,4 +8,13 @@ RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /joroni_bonfire/index.php [L]
+
+<Directory /files/uploads>
+  <Files log.txt>
+    Order allow,deny
+    Deny from all
+  </Files>
+</Directory>
+
 </IfModule>
+
