@@ -1,5 +1,8 @@
 $(document).ready(function() {
     $('input[type="text"], input[type="password"]').attr('autocomplete', 'off');
+    $("body").addClass("theme-blue-grey");
+    $(".btn-primary").addClass("btn-puma").removeClass("btn-primary");
+
 });
 $(function() {
     skinChanger();
@@ -12,19 +15,18 @@ $(function() {
         setSettingListHeightAndScroll(false);
     });
 
-    $("body").addClass("theme-red");
+
     $(".table").addClass("table-responsive");
-    /* $(".navbar-header .bars, .overlay").click(function() {
-         $('body').toggleClass('rs-closed');
-         // $(".nav").toggleClass("hiddenRight");
-     });*/
+    $(".navbar-header .bars").click(function() {
+        $('.navbar-collapse').removeClass('in');
+    });
 
 
     $("input, textarea, select").addClass("form-control");
     $(".control-group").addClass("form-group").removeClass("control-group");
     $(".span12").addClass("col-sm-12").removeClass("span12");
     $(".span6").addClass("col-sm-12").removeClass("span6");
-    var textBasedInput = $(".form-group .controls input, .form-group .controls textarea");
+    var textBasedInput = $(".form-group .controls input[type='text'], .form-group .controls input[type='password'], .form-group .controls textarea");
     $(textBasedInput).parent().wrapInner("<div class='form-line'></div>");
 
 
