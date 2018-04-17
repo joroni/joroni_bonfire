@@ -5,3 +5,9 @@
 <p>This is your playground.</p>
 
 <p>Make it home.</p>
+<?php echo Modules::run('file_manager/widget/alias'); ?>
+
+
+
+
+

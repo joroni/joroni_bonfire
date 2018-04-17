@@ -118,9 +118,9 @@ if (defined('CI_VERSION') && substr(CI_VERSION, 0, 1) != '2') {
     $active_record = true;
 
     $db['default']['hostname'] = 'localhost';
-    $db['default']['username'] = '';
+    $db['default']['username'] = 'root';
     $db['default']['password'] = '';
-    $db['default']['database'] = '';
+    $db['default']['database'] = 'bonfire';
     $db['default']['port']     = '';
     $db['default']['dbdriver'] = 'bfmysqli';
     $db['default']['dbprefix'] = 'bf_';

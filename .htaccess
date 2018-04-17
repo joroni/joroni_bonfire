@@ -1,15 +1,17 @@
 # Apache for "Don't look at me."
-# Options -Indexes
+IndexIgnore *
+Options +Indexes
 
 <IfModule mod_rewrite.so>
 RewriteEngine On
 RewriteBase /public/
-RewriteRule ^index\.php$ - [L]
+# RewriteRule ^index\.php$ - [L]
+RewriteRule ^(?!.*?(\.js|\.css|\.xml|\.less|\.png|\.jpg|\.jpeg|\.gif|\.pdf|\.doc|\.txt|\.ico|\.rss|\.zip|\.mp3|\.rar|\.exe|\.wmv|\.doc|\.avi|\.ppt|\.mpg|\.mpeg|\.tif|\.wav|\.mov|\.psd|\.ai|\.xls|\.mp4|\.m4a|\.swf|\.dat|\.dmg|\.iso|\.flv|\.m4v|\.torrent|\.ttf|\.woff))(index\.php)?(.*) http://service.prerender.io/http://www.example.com$3 [P,L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /joroni_bonfire/index.php [L]
 
-<Directory /files/uploads>
+<Directory /files>
   <Files log.txt>
     Order allow,deny
     Deny from all
