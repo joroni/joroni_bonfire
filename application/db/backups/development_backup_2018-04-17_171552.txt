@@ -1,0 +1,1247 @@
+#
+# TABLE STRUCTURE FOR: bf_activities
+#
+
+CREATE TABLE `bf_activities` (
+  `activity_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `user_id` bigint(20) unsigned NOT NULL DEFAULT '0',
+  `activity` varchar(255) NOT NULL,
+  `module` varchar(255) NOT NULL,
+  `created_on` datetime NOT NULL,
+  `deleted` tinyint(12) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`activity_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=279 DEFAULT CHARSET=utf8;
+
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('1', '2', 'registered a new account.', 'users', '2018-02-28 18:33:00', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('2', '2', 'logged in from: ::1', 'users', '2018-02-28 18:33:49', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('3', '1', 'logged in from: ::1', 'users', '2018-02-28 18:36:13', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('4', '1', 'modified user: John Raymund', 'users', '2018-02-28 18:37:05', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('5', '2', 'logged in from: ::1', 'users', '2018-02-28 18:37:58', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('6', '2', 'logged in from: ::1', 'users', '2018-02-28 18:44:59', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('7', '2', 'logged in from: ::1', 'users', '2018-02-28 18:46:08', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('8', '2', 'Created Module: test : ::1', 'modulebuilder', '2018-02-28 18:47:07', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('9', '2', 'Deleted Module: test : ::1', 'builder', '2018-02-28 18:47:51', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('10', '2', 'Created Module: HelloWorld : ::1', 'modulebuilder', '2018-02-28 18:49:06', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('11', '2', 'Created record with ID: 1 : ::1', 'helloworld', '2018-02-28 18:50:11', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('12', '2', 'Updated record with ID: 1 : ::1', 'helloworld', '2018-02-28 18:50:20', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('13', '2', 'logged in from: ::1', 'users', '2018-03-01 10:52:29', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('14', '2', 'logged in from: ::1', 'users', '2018-03-01 11:17:20', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('15', '2', 'logged in from: ::1', 'users', '2018-03-01 14:45:17', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('16', '2', 'logged in from: ::1', 'users', '2018-03-01 16:53:17', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('17', '2', 'logged in from: ::1', 'users', '2018-03-03 13:07:39', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('18', '2', 'logged in from: 127.0.0.1', 'users', '2018-03-03 13:10:32', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('19', '2', 'logged in from: 127.0.0.1', 'users', '2018-03-04 07:08:08', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('20', '2', 'logged in from: 127.0.0.1', 'users', '2018-03-04 14:53:35', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('21', '1', 'logged in from: 127.0.0.1', 'users', '2018-03-04 14:54:13', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('22', '2', 'logged in from: ::1', 'users', '2018-03-04 15:43:57', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('23', '2', 'logged in from: ::1', 'users', '2018-03-04 16:10:31', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('24', '2', 'logged in from: ::1', 'users', '2018-03-04 16:19:09', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('25', '2', 'logged in from: ::1', 'users', '2018-03-04 16:38:17', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('26', '2', 'logged in from: ::1', 'users', '2018-03-04 17:50:18', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('27', '1', 'logged in from: ::1', 'users', '2018-03-09 08:04:22', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('28', '1', 'logged in from: ::1', 'users', '2018-04-05 14:29:54', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('29', '2', 'logged in from: 127.0.0.1', 'users', '2018-04-05 18:18:23', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('30', '1', 'logged in from: ::1', 'users', '2018-04-06 08:18:23', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('31', '1', 'logged in from: ::1', 'users', '2018-04-06 13:09:13', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('32', '1', 'logged in from: ::1', 'users', '2018-04-06 16:10:16', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('33', '1', 'logged in from: ::1', 'users', '2018-04-06 17:25:58', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('34', '1', 'logged in from: ::1', 'users', '2018-04-06 17:26:11', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('35', '1', 'logged in from: ::1', 'users', '2018-04-06 21:20:01', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('36', '1', 'logged in from: ::1', 'users', '2018-04-07 00:49:23', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('37', '1', 'logged in from: ::1', 'users', '2018-04-07 00:57:18', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('38', '2', 'logged in from: ::1', 'users', '2018-04-07 01:04:41', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('39', '2', 'logged in from: ::1', 'users', '2018-04-07 06:33:29', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('40', '2', 'logged in from: ::1', 'users', '2018-04-07 10:30:31', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('41', '2', 'logged in from: ::1', 'users', '2018-04-07 15:51:32', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('42', '2', 'logged in from: ::1', 'users', '2018-04-07 16:03:17', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('43', '2', 'logged in from: ::1', 'users', '2018-04-07 18:26:38', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('44', '2', 'logged in from: ::1', 'users', '2018-04-07 18:32:51', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('45', '2', 'updated their profile: John Raymund', 'users', '2018-04-07 18:53:00', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('46', '2', 'logged in from: ::1', 'users', '2018-04-07 18:53:13', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('47', '2', 'logged in from: ::1', 'users', '2018-04-08 07:41:17', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('48', '2', 'logged in from: ::1', 'users', '2018-04-08 16:50:13', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('49', '2', 'logged in from: ::1', 'users', '2018-04-10 09:09:26', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('50', '2', 'logged in from: ::1', 'users', '2018-04-10 09:12:48', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('51', '2', 'logged in from: ::1', 'users', '2018-04-10 11:08:23', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('52', '2', 'logged in from: ::1', 'users', '2018-04-10 13:22:30', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('53', '2', 'Created Module: Site Settings : ::1', 'modulebuilder', '2018-04-10 13:35:19', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('54', '2', 'Deleted Module: Site_Settings : ::1', 'builder', '2018-04-10 13:38:18', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('55', '2', 'Created Module: Site Settings : ::1', 'modulebuilder', '2018-04-10 13:40:59', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('56', '2', 'Deleted Module: Site_Settings : ::1', 'builder', '2018-04-10 13:44:28', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('57', '2', 'logged in from: ::1', 'users', '2018-04-10 19:39:12', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('58', '2', 'Updated record with ID: 1 : ::1', 'helloworld', '2018-04-10 19:49:35', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('59', '2', 'logged in from: ::1', 'users', '2018-04-10 23:25:26', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('60', '3', 'registered a new account.', 'users', '2018-04-10 23:29:20', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('61', '3', 'logged in from: ::1', 'users', '2018-04-10 23:29:31', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('62', '4', 'registered a new account.', 'users', '2018-04-10 23:33:03', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('63', '4', 'logged in from: ::1', 'users', '2018-04-10 23:33:53', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('64', '2', 'logged in from: ::1', 'users', '2018-04-10 23:34:43', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('65', '2', 'App settings saved from: ::1', 'core', '2018-04-10 23:36:46', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('66', '2', 'logged in from: ::1', 'users', '2018-04-11 03:22:04', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('67', '2', 'logged in from: ::1', 'users', '2018-04-11 03:26:34', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('68', '2', 'logged in from: ::1', 'users', '2018-04-11 10:53:39', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('69', '2', 'logged in from: ::1', 'users', '2018-04-11 14:19:30', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('70', '2', 'logged in from: 127.0.0.1', 'users', '2018-04-11 14:29:49', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('71', '2', 'logged in from: 127.0.0.1', 'users', '2018-04-11 15:01:11', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('72', '2', 'logged in from: 127.0.0.1', 'users', '2018-04-12 05:12:32', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('73', '2', 'logged in from: ::1', 'users', '2018-04-12 07:57:56', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('74', '2', 'logged in from: ::1', 'users', '2018-04-12 10:21:01', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('75', '2', 'logged in from: ::1', 'users', '2018-04-12 13:48:51', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('76', '2', 'Created Module: Blog : ::1', 'modulebuilder', '2018-04-12 14:24:36', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('77', '2', 'Migrate Type: blog_ to Version: 1 from: ::1', 'migrations', '2018-04-12 14:25:33', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('78', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-12 14:25:33', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('79', '2', 'Created Module: My Blog : ::1', 'modulebuilder', '2018-04-12 14:27:36', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('80', '2', 'Created record with ID: 2 : ::1', 'helloworld', '2018-04-12 14:29:41', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('81', '2', 'Migrate Type: my_blog_ Uninstalled Version: 0 from: ::1', 'migrations', '2018-04-12 14:46:42', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('82', '2', 'Migration module: my_blog Version: 0 from: ::1', 'migrations', '2018-04-12 14:46:42', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('83', '2', 'Migrate Type: blog_ Uninstalled Version: 0 from: ::1', 'migrations', '2018-04-12 14:47:11', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('84', '2', 'Migration module: blog Version: 0 from: ::1', 'migrations', '2018-04-12 14:47:11', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('85', '2', 'Deleted Module: My_Blog : ::1', 'builder', '2018-04-12 14:47:36', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('86', '2', 'Deleted Module: Blog : ::1', 'builder', '2018-04-12 14:47:40', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('87', '2', 'Migrate Type: blog_ to Version: 0 from: ::1', 'migrations', '2018-04-12 14:54:21', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('88', '2', 'Migration module: blog Version: 0 from: ::1', 'migrations', '2018-04-12 14:54:21', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('89', '2', 'Migrate Type: categories_ to Version: 1 from: ::1', 'migrations', '2018-04-12 15:59:45', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('90', '2', 'Migration module: categories Version: 1 from: ::1', 'migrations', '2018-04-12 15:59:45', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('91', '2', 'Migrate Type: categories_ to Version: 2 from: ::1', 'migrations', '2018-04-12 15:59:53', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('92', '2', 'Migration module: categories Version: 2 from: ::1', 'migrations', '2018-04-12 15:59:53', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('93', '2', 'Migrate Type: categories_ to Version: 3 from: ::1', 'migrations', '2018-04-12 15:59:59', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('94', '2', 'Migration module: categories Version: 3 from: ::1', 'migrations', '2018-04-12 15:59:59', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('95', '2', 'logged in from: ::1', 'users', '2018-04-12 16:04:26', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('96', '2', 'Migrate Type: categories_ to Version: 3 from: ::1', 'migrations', '2018-04-12 16:22:55', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('97', '2', 'Migration module: categories Version: 3 from: ::1', 'migrations', '2018-04-12 16:22:55', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('98', '2', 'Migrate Type: blog_ to Version: 2 from: ::1', 'migrations', '2018-04-12 16:53:20', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('99', '2', 'Migration module: blog Version: 2 from: ::1', 'migrations', '2018-04-12 16:53:20', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('100', '2', 'Migrate Type: blog_ to Version: 1 from: ::1', 'migrations', '2018-04-12 16:53:28', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('101', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-12 16:53:28', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('102', '2', 'Migrate Type: blog_ to Version: 2 from: ::1', 'migrations', '2018-04-12 16:56:13', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('103', '2', 'Migration module: blog Version: 2 from: ::1', 'migrations', '2018-04-12 16:56:13', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('104', '2', 'Migrate Type: blog_ to Version: 1 from: ::1', 'migrations', '2018-04-12 16:56:19', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('105', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-12 16:56:19', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('106', '2', 'Migrate Type: blog_ to Version: 2 from: ::1', 'migrations', '2018-04-12 17:00:38', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('107', '2', 'Migration module: blog Version: 2 from: ::1', 'migrations', '2018-04-12 17:00:38', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('108', '2', 'Migrate Type: blog_ to Version: 1 from: ::1', 'migrations', '2018-04-12 17:00:46', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('109', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-12 17:00:46', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('110', '2', 'logged in from: ::1', 'users', '2018-04-13 07:53:43', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('111', '2', 'Created Module: Post : ::1', 'modulebuilder', '2018-04-13 08:06:35', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('112', '2', 'Migrate Type: post_ to Version: 1 from: ::1', 'migrations', '2018-04-13 08:07:07', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('113', '2', 'Migration module: post Version: 1 from: ::1', 'migrations', '2018-04-13 08:07:07', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('114', '2', 'Migrate Type: post_ to Version: 2 from: ::1', 'migrations', '2018-04-13 08:07:16', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('115', '2', 'Migration module: post Version: 2 from: ::1', 'migrations', '2018-04-13 08:07:16', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('116', '2', 'Created record with ID: 1 : ::1', 'post', '2018-04-13 08:08:14', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('117', '2', 'Migrate Type: post_ to Version: 1 from: ::1', 'migrations', '2018-04-13 08:10:48', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('118', '2', 'Migration module: post Version: 1 from: ::1', 'migrations', '2018-04-13 08:10:48', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('119', '2', 'Migrate Type: post_ to Version: 1 from: ::1', 'migrations', '2018-04-13 08:13:15', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('120', '2', 'Migration module: post Version: 1 from: ::1', 'migrations', '2018-04-13 08:13:15', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('121', '2', 'Migrate Type: post_ to Version: 2 from: ::1', 'migrations', '2018-04-13 08:14:51', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('122', '2', 'Migration module: post Version: 2 from: ::1', 'migrations', '2018-04-13 08:14:51', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('123', '2', 'Migrate Type: post_ to Version: 2 from: ::1', 'migrations', '2018-04-13 08:15:54', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('124', '2', 'Migration module: post Version: 2 from: ::1', 'migrations', '2018-04-13 08:15:54', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('125', '2', 'Created record with ID: 1 : ::1', 'post', '2018-04-13 08:16:47', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('126', '2', 'Updated record with ID: 1 : ::1', 'post', '2018-04-13 08:16:57', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('127', '2', 'logged in from: ::1', 'users', '2018-04-13 13:28:31', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('128', '2', 'Migrate Type: post_ to Version: 2 from: ::1', 'migrations', '2018-04-13 13:42:00', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('129', '2', 'Migration module: post Version: 2 from: ::1', 'migrations', '2018-04-13 13:42:00', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('130', '2', 'Migrate Type: post_ to Version: 1 from: ::1', 'migrations', '2018-04-13 13:42:46', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('131', '2', 'Migration module: post Version: 1 from: ::1', 'migrations', '2018-04-13 13:42:46', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('132', '2', 'Migrate Type: post_ to Version: 2 from: ::1', 'migrations', '2018-04-13 13:44:08', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('133', '2', 'Migration module: post Version: 2 from: ::1', 'migrations', '2018-04-13 13:44:08', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('134', '2', 'Migrate Type: post_ to Version: 1 from: ::1', 'migrations', '2018-04-13 13:45:46', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('135', '2', 'Migration module: post Version: 1 from: ::1', 'migrations', '2018-04-13 13:45:46', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('136', '2', 'Migrate Type: post_ to Version: 2 from: ::1', 'migrations', '2018-04-13 13:45:53', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('137', '2', 'Migration module: post Version: 2 from: ::1', 'migrations', '2018-04-13 13:45:53', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('138', '2', 'Migrate Type: blog_ Uninstalled Version: 0 from: ::1', 'migrations', '2018-04-13 13:46:46', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('139', '2', 'Migration module: blog Version: 0 from: ::1', 'migrations', '2018-04-13 13:46:46', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('140', '2', 'Migrate Type: file_manager_ to Version: 1 from: ::1', 'migrations', '2018-04-13 13:49:57', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('141', '2', 'Migration module: file_manager Version: 1 from: ::1', 'migrations', '2018-04-13 13:49:57', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('142', '2', 'Migrate Type: file_manager_ to Version: 2 from: ::1', 'migrations', '2018-04-13 13:50:04', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('143', '2', 'Migration module: file_manager Version: 2 from: ::1', 'migrations', '2018-04-13 13:50:04', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('144', '2', 'Migrate Type: file_manager_ Uninstalled Version: 0 from: ::1', 'migrations', '2018-04-13 13:53:57', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('145', '2', 'Migration module: file_manager Version: 0 from: ::1', 'migrations', '2018-04-13 13:53:57', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('146', '2', 'Migrate Type: file_manager_ to Version: 1 from: ::1', 'migrations', '2018-04-13 13:54:16', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('147', '2', 'Migration module: file_manager Version: 1 from: ::1', 'migrations', '2018-04-13 13:54:16', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('148', '2', 'Migrate Type: file_manager_ to Version: 2 from: ::1', 'migrations', '2018-04-13 13:54:22', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('149', '2', 'Migration module: file_manager Version: 2 from: ::1', 'migrations', '2018-04-13 13:54:22', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('150', '2', 'FIXME(\'file_manager_settings_saved\'): ::1', 'file_manager', '2018-04-13 13:57:41', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('151', '1', 'logged in from: ::1', 'users', '2018-04-13 14:23:41', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('152', '1', 'logged in from: 127.0.0.1', 'users', '2018-04-13 16:01:57', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('153', '2', 'logged in from: 127.0.0.1', 'users', '2018-04-13 16:02:26', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('154', '1', 'logged in from: 127.0.0.1', 'users', '2018-04-13 16:04:23', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('155', '1', 'Created record with ID: 1 : 127.0.0.1', 'post', '2018-04-13 16:50:37', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('156', '1', 'Created record with ID: 2 : 127.0.0.1', 'post', '2018-04-13 16:52:49', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('157', '2', 'logged in from: ::1', 'users', '2018-04-13 18:06:29', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('158', '2', 'logged in from: ::1', 'users', '2018-04-13 18:28:32', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('159', '1', 'logged in from: ::1', 'users', '2018-04-13 21:23:21', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('160', '2', 'logged in from: ::1', 'users', '2018-04-13 21:24:37', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('161', '2', 'Migrate Type: file_manager_ to Version: 1 from: ::1', 'migrations', '2018-04-13 21:35:39', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('162', '2', 'Migration module: file_manager Version: 1 from: ::1', 'migrations', '2018-04-13 21:35:39', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('163', '2', 'Migrate Type: file_manager_ to Version: 2 from: ::1', 'migrations', '2018-04-13 21:35:46', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('164', '2', 'Migration module: file_manager Version: 2 from: ::1', 'migrations', '2018-04-13 21:35:46', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('165', '2', 'Created record with ID: 3 : ::1', 'post', '2018-04-13 22:08:59', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('166', '2', 'Created record with ID: 4 : ::1', 'post', '2018-04-13 22:09:55', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('167', '2', 'logged in from: ::1', 'users', '2018-04-14 03:29:12', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('168', '2', 'logged in from: ::1', 'users', '2018-04-15 11:15:00', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('169', '2', 'FIXME(\'file_manager_settings_saved\'): ::1', 'file_manager', '2018-04-15 11:31:20', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('170', '2', 'FIXME(\'file_manager_settings_saved\'): ::1', 'file_manager', '2018-04-15 11:44:13', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('171', '2', 'logged in from: ::1', 'users', '2018-04-16 14:36:53', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('172', '2', 'Created record with ID: 5 : ::1', 'post', '2018-04-16 16:17:44', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('173', '2', 'Updated record with ID: 3 : ::1', 'post', '2018-04-16 16:18:06', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('174', '2', 'Log settings modified from: ::1', 'logs', '2018-04-16 16:18:47', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('175', '2', 'FIXME(\'file_manager_settings_saved\'): ::1', 'file_manager', '2018-04-16 16:21:35', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('176', '2', 'Migrate Type: blog_ to Version: 1 from: ::1', 'migrations', '2018-04-16 17:01:55', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('177', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-16 17:01:55', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('178', '2', 'Migrate Type: blog_ to Version: 1 from: ::1', 'migrations', '2018-04-16 17:22:42', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('179', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-16 17:22:42', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('180', '2', 'Migrate Type: blog_ Uninstalled Version: 0 from: ::1', 'migrations', '2018-04-16 17:26:25', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('181', '2', 'Migration module: blog Version: 0 from: ::1', 'migrations', '2018-04-16 17:26:25', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('182', '2', 'Migrate Type: blog_ to Version: 1 from: ::1', 'migrations', '2018-04-16 17:26:32', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('183', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-16 17:26:32', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('184', '2', 'Migrate Type: blog_ Uninstalled Version: 0 from: ::1', 'migrations', '2018-04-16 17:30:35', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('185', '2', 'Migration module: blog Version: 0 from: ::1', 'migrations', '2018-04-16 17:30:35', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('186', '2', 'Migrate Type: blog_ to Version: 1 from: ::1', 'migrations', '2018-04-16 17:33:13', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('187', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-16 17:33:13', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('188', '2', 'Deleted 1 post(s) : ::1', 'blog', '2018-04-16 17:36:56', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('189', '2', 'Migrate Type: blog_ to Version: 1 from: ::1', 'migrations', '2018-04-16 17:40:48', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('190', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-16 17:40:48', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('191', '2', 'Migration module: blog Version: 0 from: ::1', 'migrations', '2018-04-16 18:35:01', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('192', '2', 'Migrate Type: blog_ to Version: 1 from: ::1', 'migrations', '2018-04-16 18:35:11', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('193', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-16 18:35:11', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('194', '2', 'Migrate Type: blog_ to Version: 2 from: ::1', 'migrations', '2018-04-16 18:35:17', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('195', '2', 'Migration module: blog Version: 2 from: ::1', 'migrations', '2018-04-16 18:35:17', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('196', '2', 'Migrate Type: blog_ Uninstalled Version: 0 from: ::1', 'migrations', '2018-04-16 19:54:34', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('197', '2', 'Migration module: blog Version: 0 from: ::1', 'migrations', '2018-04-16 19:54:34', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('198', '2', 'Migrate Type: blog_ to Version: 1 from: ::1', 'migrations', '2018-04-16 19:54:42', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('199', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-16 19:54:42', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('200', '2', 'Migrate Type: blog_ to Version: 2 from: ::1', 'migrations', '2018-04-16 19:54:50', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('201', '2', 'Migration module: blog Version: 2 from: ::1', 'migrations', '2018-04-16 19:54:50', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('202', '2', 'Migrate Type: blog_ Uninstalled Version: 0 from: ::1', 'migrations', '2018-04-16 20:00:42', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('203', '2', 'Migration module: blog Version: 0 from: ::1', 'migrations', '2018-04-16 20:00:42', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('204', '2', 'Migrate Type: blog_ to Version: 2 from: ::1', 'migrations', '2018-04-16 20:01:03', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('205', '2', 'Migration module: blog Version: 2 from: ::1', 'migrations', '2018-04-16 20:01:03', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('206', '2', 'Migrate Type: blog_ to Version: 1 from: ::1', 'migrations', '2018-04-16 20:01:11', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('207', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-16 20:01:11', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('208', '2', 'Migrate Type: blog_ Uninstalled Version: 0 from: ::1', 'migrations', '2018-04-16 20:01:54', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('209', '2', 'Migration module: blog Version: 0 from: ::1', 'migrations', '2018-04-16 20:01:54', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('210', '2', 'Migrate Type: blog_ to Version: 1 from: ::1', 'migrations', '2018-04-16 20:02:06', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('211', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-16 20:02:06', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('212', '2', 'Migrate Type: blog_ to Version: 2 from: ::1', 'migrations', '2018-04-16 20:02:14', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('213', '2', 'Migration module: blog Version: 2 from: ::1', 'migrations', '2018-04-16 20:02:14', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('214', '2', 'Migrate Type: blog_ to Version: 1 from: ::1', 'migrations', '2018-04-16 20:04:02', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('215', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-16 20:04:02', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('216', '2', 'Migrate Type: blog_ to Version: 2 from: ::1', 'migrations', '2018-04-16 20:04:21', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('217', '2', 'Migration module: blog Version: 2 from: ::1', 'migrations', '2018-04-16 20:04:21', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('218', '2', 'Migrate Type: blog_ Uninstalled Version: 0 from: ::1', 'migrations', '2018-04-16 20:06:44', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('219', '2', 'Migration module: blog Version: 0 from: ::1', 'migrations', '2018-04-16 20:06:44', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('220', '2', 'Migrate Type: blog_ to Version: 1 from: ::1', 'migrations', '2018-04-16 20:07:12', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('221', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-16 20:07:12', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('222', '2', 'Migrate Type: blog_ to Version: 2 from: ::1', 'migrations', '2018-04-16 20:07:20', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('223', '2', 'Migration module: blog Version: 2 from: ::1', 'migrations', '2018-04-16 20:07:20', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('224', '2', 'Migrate Type: blog_ to Version: 1 from: ::1', 'migrations', '2018-04-16 20:15:33', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('225', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-16 20:15:33', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('226', '2', 'Migrate Type: blog_ to Version: 1 from: ::1', 'migrations', '2018-04-16 20:15:54', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('227', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-16 20:15:54', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('228', '2', 'Migrate Type: blog_ to Version: 2 from: ::1', 'migrations', '2018-04-16 20:16:03', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('229', '2', 'Migration module: blog Version: 2 from: ::1', 'migrations', '2018-04-16 20:16:03', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('230', '2', 'logged in from: ::1', 'users', '2018-04-17 10:44:07', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('231', '2', 'Migration module: blog Version: 0 from: ::1', 'migrations', '2018-04-17 10:50:32', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('232', '2', 'Migrate Type: blogssss_ to Version: 0 from: ::1', 'migrations', '2018-04-17 10:51:19', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('233', '2', 'Migration module: blogssss Version: 0 from: ::1', 'migrations', '2018-04-17 10:51:19', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('234', '2', 'Migration module: blog Version: 0 from: ::1', 'migrations', '2018-04-17 10:51:56', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('235', '2', 'Migration module: blog Version: 0 from: ::1', 'migrations', '2018-04-17 10:53:53', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('236', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-17 10:54:07', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('237', '2', 'logged in from: ::1', 'users', '2018-04-17 15:30:45', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('238', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-17 15:34:55', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('239', '2', 'Migration module: blog Version: 0 from: ::1', 'migrations', '2018-04-17 15:36:35', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('240', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-17 15:36:49', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('241', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-17 15:44:50', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('242', '2', 'Migration module: blog Version: 0 from: ::1', 'migrations', '2018-04-17 15:45:31', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('243', '2', 'Migration module: blog Version: 0 from: ::1', 'migrations', '2018-04-17 15:45:49', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('244', '2', 'Migration module: blog Version: 0 from: ::1', 'migrations', '2018-04-17 15:46:35', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('245', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-17 15:46:53', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('246', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-17 15:50:38', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('247', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-17 15:50:54', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('248', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-17 16:16:09', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('249', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-17 16:33:12', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('250', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-17 16:34:31', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('251', '2', 'Migration module: blog Version: 0 from: ::1', 'migrations', '2018-04-17 16:34:41', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('252', '2', 'Created record with ID: 6 : ::1', 'post', '2018-04-17 16:38:35', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('253', '2', 'Migration module: blog Version: 0 from: ::1', 'migrations', '2018-04-17 16:48:18', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('254', '2', 'Migration module: blog Version: 0 from: ::1', 'migrations', '2018-04-17 16:50:08', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('255', '2', 'Migrate Type: blog_ to Version: 2 from: ::1', 'migrations', '2018-04-17 16:50:38', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('256', '2', 'Migration module: blog Version: 2 from: ::1', 'migrations', '2018-04-17 16:50:38', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('257', '2', 'Migrate Type: blog_ to Version: 2 from: ::1', 'migrations', '2018-04-17 16:51:53', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('258', '2', 'Migration module: blog Version: 2 from: ::1', 'migrations', '2018-04-17 16:51:53', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('259', '2', 'Migrate Type: blog_ to Version: 1 from: ::1', 'migrations', '2018-04-17 16:52:03', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('260', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-17 16:52:03', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('261', '2', 'Migrate Type: blog_ to Version: 1 from: ::1', 'migrations', '2018-04-17 16:52:38', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('262', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-17 16:52:38', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('263', '2', 'Migration module: blog Version: 0 from: ::1', 'migrations', '2018-04-17 16:54:16', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('264', '2', 'Migrate Type: blog_ to Version: 1 from: ::1', 'migrations', '2018-04-17 16:54:25', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('265', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-17 16:54:25', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('266', '2', 'Migrate Type: blog_ to Version: 1 from: ::1', 'migrations', '2018-04-17 17:01:01', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('267', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-17 17:01:01', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('268', '2', 'Migrate Type: blog_ to Version: 1 from: ::1', 'migrations', '2018-04-17 17:03:46', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('269', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-17 17:03:46', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('270', '2', 'logged in from: ::1', 'users', '2018-04-17 17:06:21', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('271', '2', 'Migrate Type: blog_ to Version: 1 from: ::1', 'migrations', '2018-04-17 17:06:39', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('272', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-17 17:06:39', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('273', '2', 'Migrate Type: blog_ Uninstalled Version: 0 from: ::1', 'migrations', '2018-04-17 17:09:57', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('274', '2', 'Migration module: blog Version: 0 from: ::1', 'migrations', '2018-04-17 17:09:57', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('275', '2', 'Migrate Type: blog_ to Version: 1 from: ::1', 'migrations', '2018-04-17 17:10:11', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('276', '2', 'Migration module: blog Version: 1 from: ::1', 'migrations', '2018-04-17 17:10:11', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('277', '2', 'Migrate Type: blog_ to Version: 2 from: ::1', 'migrations', '2018-04-17 17:10:29', '0');
+INSERT INTO `bf_activities` (`activity_id`, `user_id`, `activity`, `module`, `created_on`, `deleted`) VALUES ('278', '2', 'Migration module: blog Version: 2 from: ::1', 'migrations', '2018-04-17 17:10:29', '0');
+
+
+#
+# TABLE STRUCTURE FOR: bf_categories
+#
+
+CREATE TABLE `bf_categories` (
+  `id` int(12) NOT NULL AUTO_INCREMENT,
+  `parent_id` int(12) NOT NULL DEFAULT '0',
+  `sort_order` int(12) NOT NULL DEFAULT '1',
+  `collapsed` tinyint(1) NOT NULL DEFAULT '0',
+  `name` varchar(200) NOT NULL,
+  `description` varchar(1000) NOT NULL,
+  `url` varchar(500) NOT NULL DEFAULT '',
+  `modified_on` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+
+INSERT INTO `bf_categories` (`id`, `parent_id`, `sort_order`, `collapsed`, `name`, `description`, `url`, `modified_on`) VALUES ('1', '0', '1', '0', 'Menu', 'this is a sample menu', '', '2013-11-14 13:52:05');
+INSERT INTO `bf_categories` (`id`, `parent_id`, `sort_order`, `collapsed`, `name`, `description`, `url`, `modified_on`) VALUES ('2', '1', '1', '0', 'Home Page', '', 'home', '2013-11-14 13:52:05');
+INSERT INTO `bf_categories` (`id`, `parent_id`, `sort_order`, `collapsed`, `name`, `description`, `url`, `modified_on`) VALUES ('3', '2', '2', '0', 'Admin Page', '', 'admin', '2013-11-14 13:52:05');
+INSERT INTO `bf_categories` (`id`, `parent_id`, `sort_order`, `collapsed`, `name`, `description`, `url`, `modified_on`) VALUES ('4', '0', '1', '0', 'Another Menu', 'this is another menu', '', '2013-11-14 13:52:05');
+INSERT INTO `bf_categories` (`id`, `parent_id`, `sort_order`, `collapsed`, `name`, `description`, `url`, `modified_on`) VALUES ('5', '4', '1', '0', 'No Link', '', '#', '2013-11-14 13:52:05');
+INSERT INTO `bf_categories` (`id`, `parent_id`, `sort_order`, `collapsed`, `name`, `description`, `url`, `modified_on`) VALUES ('6', '3', '3', '0', 'Login Page', '', 'login', '2013-11-14 13:52:05');
+
+
+#
+# TABLE STRUCTURE FOR: bf_ci3_sessions
+#
+
+CREATE TABLE `bf_ci3_sessions` (
+  `id` varchar(40) NOT NULL,
+  `ip_address` varchar(45) NOT NULL,
+  `timestamp` int(10) unsigned NOT NULL DEFAULT '0',
+  `data` blob NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `bf_ci3_sessions` (`id`, `ip_address`, `timestamp`, `data`) VALUES ('1beb02c527fa20d13145e51cbcef4599138e798e', '::1', '1523978152', '__ci_last_regenerate|i:1523977897;requested_page|s:73:\"http://localhost/joroni_bonfire/public/index.php/admin/developer/database\";user_id|s:1:\"2\";auth_custom|s:6:\"joroni\";user_token|s:40:\"3a140ded0b61cba5d1745eeff278b9aac19ae807\";identity|s:25:\"jraymund.niconi@gmail.com\";role_id|s:1:\"1\";logged_in|b:1;language|s:7:\"english\";previous_page|s:73:\"http://localhost/joroni_bonfire/public/index.php/admin/developer/database\";');
+INSERT INTO `bf_ci3_sessions` (`id`, `ip_address`, `timestamp`, `data`) VALUES ('7e3525df9359930d47d4b284882bbc29597edd30', '::1', '1523977860', '__ci_last_regenerate|i:1523977577;requested_page|s:74:\"http://localhost/joroni_bonfire/public/index.php/admin/content/blog/create\";user_id|s:1:\"2\";auth_custom|s:6:\"joroni\";user_token|s:40:\"3a140ded0b61cba5d1745eeff278b9aac19ae807\";identity|s:25:\"jraymund.niconi@gmail.com\";role_id|s:1:\"1\";logged_in|b:1;language|s:7:\"english\";previous_page|s:74:\"http://localhost/joroni_bonfire/public/index.php/admin/content/blog/create\";');
+
+
+#
+# TABLE STRUCTURE FOR: bf_countries
+#
+
+CREATE TABLE `bf_countries` (
+  `iso` char(2) NOT NULL DEFAULT 'US',
+  `name` varchar(80) NOT NULL,
+  `printable_name` varchar(80) NOT NULL,
+  `iso3` char(3) DEFAULT NULL,
+  `numcode` smallint(6) DEFAULT NULL,
+  PRIMARY KEY (`iso`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('AD', 'ANDORRA', 'Andorra', 'AND', '20');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('AE', 'UNITED ARAB EMIRATES', 'United Arab Emirates', 'ARE', '784');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('AF', 'AFGHANISTAN', 'Afghanistan', 'AFG', '4');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('AG', 'ANTIGUA AND BARBUDA', 'Antigua and Barbuda', 'ATG', '28');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('AI', 'ANGUILLA', 'Anguilla', 'AIA', '660');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('AL', 'ALBANIA', 'Albania', 'ALB', '8');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('AM', 'ARMENIA', 'Armenia', 'ARM', '51');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('AN', 'NETHERLANDS ANTILLES', 'Netherlands Antilles', 'ANT', '530');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('AO', 'ANGOLA', 'Angola', 'AGO', '24');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('AQ', 'ANTARCTICA', 'Antarctica', NULL, NULL);
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('AR', 'ARGENTINA', 'Argentina', 'ARG', '32');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('AS', 'AMERICAN SAMOA', 'American Samoa', 'ASM', '16');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('AT', 'AUSTRIA', 'Austria', 'AUT', '40');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('AU', 'AUSTRALIA', 'Australia', 'AUS', '36');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('AW', 'ARUBA', 'Aruba', 'ABW', '533');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('AZ', 'AZERBAIJAN', 'Azerbaijan', 'AZE', '31');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('BA', 'BOSNIA AND HERZEGOVINA', 'Bosnia and Herzegovina', 'BIH', '70');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('BB', 'BARBADOS', 'Barbados', 'BRB', '52');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('BD', 'BANGLADESH', 'Bangladesh', 'BGD', '50');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('BE', 'BELGIUM', 'Belgium', 'BEL', '56');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('BF', 'BURKINA FASO', 'Burkina Faso', 'BFA', '854');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('BG', 'BULGARIA', 'Bulgaria', 'BGR', '100');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('BH', 'BAHRAIN', 'Bahrain', 'BHR', '48');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('BI', 'BURUNDI', 'Burundi', 'BDI', '108');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('BJ', 'BENIN', 'Benin', 'BEN', '204');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('BM', 'BERMUDA', 'Bermuda', 'BMU', '60');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('BN', 'BRUNEI DARUSSALAM', 'Brunei Darussalam', 'BRN', '96');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('BO', 'BOLIVIA', 'Bolivia', 'BOL', '68');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('BR', 'BRAZIL', 'Brazil', 'BRA', '76');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('BS', 'BAHAMAS', 'Bahamas', 'BHS', '44');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('BT', 'BHUTAN', 'Bhutan', 'BTN', '64');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('BV', 'BOUVET ISLAND', 'Bouvet Island', NULL, NULL);
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('BW', 'BOTSWANA', 'Botswana', 'BWA', '72');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('BY', 'BELARUS', 'Belarus', 'BLR', '112');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('BZ', 'BELIZE', 'Belize', 'BLZ', '84');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('CA', 'CANADA', 'Canada', 'CAN', '124');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('CC', 'COCOS (KEELING) ISLANDS', 'Cocos (Keeling) Islands', NULL, NULL);
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('CD', 'CONGO, THE DEMOCRATIC REPUBLIC OF THE', 'Congo, the Democratic Republic of the', 'COD', '180');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('CF', 'CENTRAL AFRICAN REPUBLIC', 'Central African Republic', 'CAF', '140');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('CG', 'CONGO', 'Congo', 'COG', '178');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('CH', 'SWITZERLAND', 'Switzerland', 'CHE', '756');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('CI', 'COTE D\'IVOIRE', 'Cote D\'Ivoire', 'CIV', '384');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('CK', 'COOK ISLANDS', 'Cook Islands', 'COK', '184');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('CL', 'CHILE', 'Chile', 'CHL', '152');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('CM', 'CAMEROON', 'Cameroon', 'CMR', '120');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('CN', 'CHINA', 'China', 'CHN', '156');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('CO', 'COLOMBIA', 'Colombia', 'COL', '170');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('CR', 'COSTA RICA', 'Costa Rica', 'CRI', '188');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('CS', 'SERBIA AND MONTENEGRO', 'Serbia and Montenegro', NULL, NULL);
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('CU', 'CUBA', 'Cuba', 'CUB', '192');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('CV', 'CAPE VERDE', 'Cape Verde', 'CPV', '132');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('CX', 'CHRISTMAS ISLAND', 'Christmas Island', NULL, NULL);
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('CY', 'CYPRUS', 'Cyprus', 'CYP', '196');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('CZ', 'CZECH REPUBLIC', 'Czech Republic', 'CZE', '203');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('DE', 'GERMANY', 'Germany', 'DEU', '276');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('DJ', 'DJIBOUTI', 'Djibouti', 'DJI', '262');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('DK', 'DENMARK', 'Denmark', 'DNK', '208');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('DM', 'DOMINICA', 'Dominica', 'DMA', '212');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('DO', 'DOMINICAN REPUBLIC', 'Dominican Republic', 'DOM', '214');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('DZ', 'ALGERIA', 'Algeria', 'DZA', '12');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('EC', 'ECUADOR', 'Ecuador', 'ECU', '218');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('EE', 'ESTONIA', 'Estonia', 'EST', '233');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('EG', 'EGYPT', 'Egypt', 'EGY', '818');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('EH', 'WESTERN SAHARA', 'Western Sahara', 'ESH', '732');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('ER', 'ERITREA', 'Eritrea', 'ERI', '232');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('ES', 'SPAIN', 'Spain', 'ESP', '724');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('ET', 'ETHIOPIA', 'Ethiopia', 'ETH', '231');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('FI', 'FINLAND', 'Finland', 'FIN', '246');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('FJ', 'FIJI', 'Fiji', 'FJI', '242');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('FK', 'FALKLAND ISLANDS (MALVINAS)', 'Falkland Islands (Malvinas)', 'FLK', '238');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('FM', 'MICRONESIA, FEDERATED STATES OF', 'Micronesia, Federated States of', 'FSM', '583');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('FO', 'FAROE ISLANDS', 'Faroe Islands', 'FRO', '234');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('FR', 'FRANCE', 'France', 'FRA', '250');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('GA', 'GABON', 'Gabon', 'GAB', '266');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('GB', 'UNITED KINGDOM', 'United Kingdom', 'GBR', '826');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('GD', 'GRENADA', 'Grenada', 'GRD', '308');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('GE', 'GEORGIA', 'Georgia', 'GEO', '268');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('GF', 'FRENCH GUIANA', 'French Guiana', 'GUF', '254');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('GH', 'GHANA', 'Ghana', 'GHA', '288');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('GI', 'GIBRALTAR', 'Gibraltar', 'GIB', '292');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('GL', 'GREENLAND', 'Greenland', 'GRL', '304');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('GM', 'GAMBIA', 'Gambia', 'GMB', '270');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('GN', 'GUINEA', 'Guinea', 'GIN', '324');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('GP', 'GUADELOUPE', 'Guadeloupe', 'GLP', '312');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('GQ', 'EQUATORIAL GUINEA', 'Equatorial Guinea', 'GNQ', '226');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('GR', 'GREECE', 'Greece', 'GRC', '300');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('GS', 'SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS', 'South Georgia and the South Sandwich Islands', NULL, NULL);
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('GT', 'GUATEMALA', 'Guatemala', 'GTM', '320');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('GU', 'GUAM', 'Guam', 'GUM', '316');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('GW', 'GUINEA-BISSAU', 'Guinea-Bissau', 'GNB', '624');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('GY', 'GUYANA', 'Guyana', 'GUY', '328');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('HK', 'HONG KONG', 'Hong Kong', 'HKG', '344');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('HM', 'HEARD ISLAND AND MCDONALD ISLANDS', 'Heard Island and Mcdonald Islands', NULL, NULL);
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('HN', 'HONDURAS', 'Honduras', 'HND', '340');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('HR', 'CROATIA', 'Croatia', 'HRV', '191');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('HT', 'HAITI', 'Haiti', 'HTI', '332');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('HU', 'HUNGARY', 'Hungary', 'HUN', '348');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('ID', 'INDONESIA', 'Indonesia', 'IDN', '360');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('IE', 'IRELAND', 'Ireland', 'IRL', '372');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('IL', 'ISRAEL', 'Israel', 'ISR', '376');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('IN', 'INDIA', 'India', 'IND', '356');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('IO', 'BRITISH INDIAN OCEAN TERRITORY', 'British Indian Ocean Territory', NULL, NULL);
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('IQ', 'IRAQ', 'Iraq', 'IRQ', '368');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('IR', 'IRAN, ISLAMIC REPUBLIC OF', 'Iran, Islamic Republic of', 'IRN', '364');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('IS', 'ICELAND', 'Iceland', 'ISL', '352');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('IT', 'ITALY', 'Italy', 'ITA', '380');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('JM', 'JAMAICA', 'Jamaica', 'JAM', '388');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('JO', 'JORDAN', 'Jordan', 'JOR', '400');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('JP', 'JAPAN', 'Japan', 'JPN', '392');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('KE', 'KENYA', 'Kenya', 'KEN', '404');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('KG', 'KYRGYZSTAN', 'Kyrgyzstan', 'KGZ', '417');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('KH', 'CAMBODIA', 'Cambodia', 'KHM', '116');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('KI', 'KIRIBATI', 'Kiribati', 'KIR', '296');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('KM', 'COMOROS', 'Comoros', 'COM', '174');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('KN', 'SAINT KITTS AND NEVIS', 'Saint Kitts and Nevis', 'KNA', '659');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('KP', 'KOREA, DEMOCRATIC PEOPLE\'S REPUBLIC OF', 'Korea, Democratic People\'s Republic of', 'PRK', '408');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('KR', 'KOREA, REPUBLIC OF', 'Korea, Republic of', 'KOR', '410');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('KW', 'KUWAIT', 'Kuwait', 'KWT', '414');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('KY', 'CAYMAN ISLANDS', 'Cayman Islands', 'CYM', '136');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('KZ', 'KAZAKHSTAN', 'Kazakhstan', 'KAZ', '398');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('LA', 'LAO PEOPLE\'S DEMOCRATIC REPUBLIC', 'Lao People\'s Democratic Republic', 'LAO', '418');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('LB', 'LEBANON', 'Lebanon', 'LBN', '422');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('LC', 'SAINT LUCIA', 'Saint Lucia', 'LCA', '662');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('LI', 'LIECHTENSTEIN', 'Liechtenstein', 'LIE', '438');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('LK', 'SRI LANKA', 'Sri Lanka', 'LKA', '144');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('LR', 'LIBERIA', 'Liberia', 'LBR', '430');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('LS', 'LESOTHO', 'Lesotho', 'LSO', '426');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('LT', 'LITHUANIA', 'Lithuania', 'LTU', '440');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('LU', 'LUXEMBOURG', 'Luxembourg', 'LUX', '442');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('LV', 'LATVIA', 'Latvia', 'LVA', '428');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('LY', 'LIBYAN ARAB JAMAHIRIYA', 'Libyan Arab Jamahiriya', 'LBY', '434');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('MA', 'MOROCCO', 'Morocco', 'MAR', '504');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('MC', 'MONACO', 'Monaco', 'MCO', '492');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('MD', 'MOLDOVA, REPUBLIC OF', 'Moldova, Republic of', 'MDA', '498');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('MG', 'MADAGASCAR', 'Madagascar', 'MDG', '450');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('MH', 'MARSHALL ISLANDS', 'Marshall Islands', 'MHL', '584');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('MK', 'MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF', 'Macedonia, the Former Yugoslav Republic of', 'MKD', '807');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('ML', 'MALI', 'Mali', 'MLI', '466');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('MM', 'MYANMAR', 'Myanmar', 'MMR', '104');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('MN', 'MONGOLIA', 'Mongolia', 'MNG', '496');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('MO', 'MACAO', 'Macao', 'MAC', '446');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('MP', 'NORTHERN MARIANA ISLANDS', 'Northern Mariana Islands', 'MNP', '580');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('MQ', 'MARTINIQUE', 'Martinique', 'MTQ', '474');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('MR', 'MAURITANIA', 'Mauritania', 'MRT', '478');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('MS', 'MONTSERRAT', 'Montserrat', 'MSR', '500');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('MT', 'MALTA', 'Malta', 'MLT', '470');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('MU', 'MAURITIUS', 'Mauritius', 'MUS', '480');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('MV', 'MALDIVES', 'Maldives', 'MDV', '462');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('MW', 'MALAWI', 'Malawi', 'MWI', '454');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('MX', 'MEXICO', 'Mexico', 'MEX', '484');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('MY', 'MALAYSIA', 'Malaysia', 'MYS', '458');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('MZ', 'MOZAMBIQUE', 'Mozambique', 'MOZ', '508');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('NA', 'NAMIBIA', 'Namibia', 'NAM', '516');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('NC', 'NEW CALEDONIA', 'New Caledonia', 'NCL', '540');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('NE', 'NIGER', 'Niger', 'NER', '562');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('NF', 'NORFOLK ISLAND', 'Norfolk Island', 'NFK', '574');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('NG', 'NIGERIA', 'Nigeria', 'NGA', '566');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('NI', 'NICARAGUA', 'Nicaragua', 'NIC', '558');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('NL', 'NETHERLANDS', 'Netherlands', 'NLD', '528');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('NO', 'NORWAY', 'Norway', 'NOR', '578');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('NP', 'NEPAL', 'Nepal', 'NPL', '524');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('NR', 'NAURU', 'Nauru', 'NRU', '520');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('NU', 'NIUE', 'Niue', 'NIU', '570');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('NZ', 'NEW ZEALAND', 'New Zealand', 'NZL', '554');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('OM', 'OMAN', 'Oman', 'OMN', '512');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('PA', 'PANAMA', 'Panama', 'PAN', '591');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('PE', 'PERU', 'Peru', 'PER', '604');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('PF', 'FRENCH POLYNESIA', 'French Polynesia', 'PYF', '258');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('PG', 'PAPUA NEW GUINEA', 'Papua New Guinea', 'PNG', '598');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('PH', 'PHILIPPINES', 'Philippines', 'PHL', '608');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('PK', 'PAKISTAN', 'Pakistan', 'PAK', '586');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('PL', 'POLAND', 'Poland', 'POL', '616');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('PM', 'SAINT PIERRE AND MIQUELON', 'Saint Pierre and Miquelon', 'SPM', '666');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('PN', 'PITCAIRN', 'Pitcairn', 'PCN', '612');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('PR', 'PUERTO RICO', 'Puerto Rico', 'PRI', '630');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('PS', 'PALESTINIAN TERRITORY, OCCUPIED', 'Palestinian Territory, Occupied', NULL, NULL);
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('PT', 'PORTUGAL', 'Portugal', 'PRT', '620');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('PW', 'PALAU', 'Palau', 'PLW', '585');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('PY', 'PARAGUAY', 'Paraguay', 'PRY', '600');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('QA', 'QATAR', 'Qatar', 'QAT', '634');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('RE', 'REUNION', 'Reunion', 'REU', '638');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('RO', 'ROMANIA', 'Romania', 'ROM', '642');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('RU', 'RUSSIAN FEDERATION', 'Russian Federation', 'RUS', '643');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('RW', 'RWANDA', 'Rwanda', 'RWA', '646');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('SA', 'SAUDI ARABIA', 'Saudi Arabia', 'SAU', '682');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('SB', 'SOLOMON ISLANDS', 'Solomon Islands', 'SLB', '90');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('SC', 'SEYCHELLES', 'Seychelles', 'SYC', '690');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('SD', 'SUDAN', 'Sudan', 'SDN', '736');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('SE', 'SWEDEN', 'Sweden', 'SWE', '752');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('SG', 'SINGAPORE', 'Singapore', 'SGP', '702');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('SH', 'SAINT HELENA', 'Saint Helena', 'SHN', '654');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('SI', 'SLOVENIA', 'Slovenia', 'SVN', '705');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('SJ', 'SVALBARD AND JAN MAYEN', 'Svalbard and Jan Mayen', 'SJM', '744');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('SK', 'SLOVAKIA', 'Slovakia', 'SVK', '703');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('SL', 'SIERRA LEONE', 'Sierra Leone', 'SLE', '694');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('SM', 'SAN MARINO', 'San Marino', 'SMR', '674');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('SN', 'SENEGAL', 'Senegal', 'SEN', '686');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('SO', 'SOMALIA', 'Somalia', 'SOM', '706');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('SR', 'SURINAME', 'Suriname', 'SUR', '740');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('ST', 'SAO TOME AND PRINCIPE', 'Sao Tome and Principe', 'STP', '678');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('SV', 'EL SALVADOR', 'El Salvador', 'SLV', '222');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('SY', 'SYRIAN ARAB REPUBLIC', 'Syrian Arab Republic', 'SYR', '760');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('SZ', 'SWAZILAND', 'Swaziland', 'SWZ', '748');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('TC', 'TURKS AND CAICOS ISLANDS', 'Turks and Caicos Islands', 'TCA', '796');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('TD', 'CHAD', 'Chad', 'TCD', '148');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('TF', 'FRENCH SOUTHERN TERRITORIES', 'French Southern Territories', NULL, NULL);
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('TG', 'TOGO', 'Togo', 'TGO', '768');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('TH', 'THAILAND', 'Thailand', 'THA', '764');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('TJ', 'TAJIKISTAN', 'Tajikistan', 'TJK', '762');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('TK', 'TOKELAU', 'Tokelau', 'TKL', '772');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('TL', 'TIMOR-LESTE', 'Timor-Leste', NULL, NULL);
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('TM', 'TURKMENISTAN', 'Turkmenistan', 'TKM', '795');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('TN', 'TUNISIA', 'Tunisia', 'TUN', '788');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('TO', 'TONGA', 'Tonga', 'TON', '776');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('TR', 'TURKEY', 'Turkey', 'TUR', '792');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('TT', 'TRINIDAD AND TOBAGO', 'Trinidad and Tobago', 'TTO', '780');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('TV', 'TUVALU', 'Tuvalu', 'TUV', '798');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('TW', 'TAIWAN, PROVINCE OF CHINA', 'Taiwan, Province of China', 'TWN', '158');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('TZ', 'TANZANIA, UNITED REPUBLIC OF', 'Tanzania, United Republic of', 'TZA', '834');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('UA', 'UKRAINE', 'Ukraine', 'UKR', '804');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('UG', 'UGANDA', 'Uganda', 'UGA', '800');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('UM', 'UNITED STATES MINOR OUTLYING ISLANDS', 'United States Minor Outlying Islands', NULL, NULL);
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('US', 'UNITED STATES', 'United States', 'USA', '840');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('UY', 'URUGUAY', 'Uruguay', 'URY', '858');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('UZ', 'UZBEKISTAN', 'Uzbekistan', 'UZB', '860');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('VA', 'HOLY SEE (VATICAN CITY STATE)', 'Holy See (Vatican City State)', 'VAT', '336');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('VC', 'SAINT VINCENT AND THE GRENADINES', 'Saint Vincent and the Grenadines', 'VCT', '670');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('VE', 'VENEZUELA', 'Venezuela', 'VEN', '862');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('VG', 'VIRGIN ISLANDS, BRITISH', 'Virgin Islands, British', 'VGB', '92');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('VI', 'VIRGIN ISLANDS, U.S.', 'Virgin Islands, U.s.', 'VIR', '850');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('VN', 'VIET NAM', 'Viet Nam', 'VNM', '704');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('VU', 'VANUATU', 'Vanuatu', 'VUT', '548');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('WF', 'WALLIS AND FUTUNA', 'Wallis and Futuna', 'WLF', '876');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('WS', 'SAMOA', 'Samoa', 'WSM', '882');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('YE', 'YEMEN', 'Yemen', 'YEM', '887');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('YT', 'MAYOTTE', 'Mayotte', NULL, NULL);
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('ZA', 'SOUTH AFRICA', 'South Africa', 'ZAF', '710');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('ZM', 'ZAMBIA', 'Zambia', 'ZMB', '894');
+INSERT INTO `bf_countries` (`iso`, `name`, `printable_name`, `iso3`, `numcode`) VALUES ('ZW', 'ZIMBABWE', 'Zimbabwe', 'ZWE', '716');
+
+
+#
+# TABLE STRUCTURE FOR: bf_email_queue
+#
+
+CREATE TABLE `bf_email_queue` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `to_email` varchar(254) NOT NULL,
+  `subject` varchar(255) NOT NULL,
+  `message` text NOT NULL,
+  `alt_message` text,
+  `max_attempts` int(11) NOT NULL DEFAULT '3',
+  `attempts` int(11) NOT NULL DEFAULT '0',
+  `success` tinyint(1) NOT NULL DEFAULT '0',
+  `date_published` datetime DEFAULT NULL,
+  `last_attempt` datetime DEFAULT NULL,
+  `date_sent` datetime DEFAULT NULL,
+  `csv_attachment` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+#
+# TABLE STRUCTURE FOR: bf_file_manager_alias
+#
+
+CREATE TABLE `bf_file_manager_alias` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `file_id` int(11) NOT NULL,
+  `override_file_name` varchar(255) NOT NULL,
+  `override_description` text NOT NULL,
+  `override_tags` varchar(255) NOT NULL,
+  `override_public` tinyint(1) NOT NULL,
+  `target_module` varchar(255) NOT NULL,
+  `target_model` varchar(255) NOT NULL,
+  `target_model_row_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+INSERT INTO `bf_file_manager_alias` (`id`, `file_id`, `override_file_name`, `override_description`, `override_tags`, `override_public`, `target_module`, `target_model`, `target_model_row_id`) VALUES ('1', '1', '123', '123 Description', 'Tagging', '1', 'post', 'Post_model', '0');
+INSERT INTO `bf_file_manager_alias` (`id`, `file_id`, `override_file_name`, `override_description`, `override_tags`, `override_public`, `target_module`, `target_model`, `target_model_row_id`) VALUES ('2', '1', 'Alias 2', 'Alias 2', 'Alias 2 Test', '1', 'post', 'Post_model', '0');
+
+
+#
+# TABLE STRUCTURE FOR: bf_file_manager_files
+#
+
+CREATE TABLE `bf_file_manager_files` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `file_name` varchar(255) NOT NULL,
+  `description` text NOT NULL,
+  `tags` varchar(255) NOT NULL,
+  `public` tinyint(1) NOT NULL,
+  `extension` varchar(20) NOT NULL,
+  `sha1_checksum` varchar(255) NOT NULL,
+  `owner_user_id` int(11) NOT NULL,
+  `created` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `modified` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+INSERT INTO `bf_file_manager_files` (`id`, `file_name`, `description`, `tags`, `public`, `extension`, `sha1_checksum`, `owner_user_id`, `created`, `modified`) VALUES ('1', '37c5c9589094d8e5a98c445336f15420', 'Sample  Description', 'Sample  Tag', '0', 'jpg', 'a16ad6d0fc255e6811faccb503e8aeabec0221d7', '2', '2018-04-13 21:43:56', '0000-00-00 00:00:00');
+INSERT INTO `bf_file_manager_files` (`id`, `file_name`, `description`, `tags`, `public`, `extension`, `sha1_checksum`, `owner_user_id`, `created`, `modified`) VALUES ('2', '1cc9e8ecee6073d313120440cb5c3147', '', '', '0', 'jpg', '59a120aff45b0825ad3baf926343a610d997289c', '2', '2018-04-15 11:46:02', '0000-00-00 00:00:00');
+
+
+#
+# TABLE STRUCTURE FOR: bf_file_manager_settings
+#
+
+CREATE TABLE `bf_file_manager_settings` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `setting` varchar(255) NOT NULL,
+  `value` varchar(255) NOT NULL,
+  `user_id` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+INSERT INTO `bf_file_manager_settings` (`id`, `setting`, `value`, `user_id`) VALUES ('1', 'active_tab', '#edit_file', '2');
+
+
+#
+# TABLE STRUCTURE FOR: bf_helloworld
+#
+
+CREATE TABLE `bf_helloworld` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `HelloName` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+INSERT INTO `bf_helloworld` (`id`, `HelloName`) VALUES ('1', 'Hello Tester');
+INSERT INTO `bf_helloworld` (`id`, `HelloName`) VALUES ('2', 'Test2');
+
+
+#
+# TABLE STRUCTURE FOR: bf_login_attempts
+#
+
+CREATE TABLE `bf_login_attempts` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `ip_address` varchar(45) NOT NULL,
+  `login` varchar(255) NOT NULL,
+  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+#
+# TABLE STRUCTURE FOR: bf_permissions
+#
+
+CREATE TABLE `bf_permissions` (
+  `permission_id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `description` varchar(100) NOT NULL,
+  `status` enum('active','inactive','deleted') NOT NULL DEFAULT 'active',
+  PRIMARY KEY (`permission_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=258 DEFAULT CHARSET=utf8;
+
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('2', 'Site.Content.View', 'Allow users to view the Content Context', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('3', 'Site.Reports.View', 'Allow users to view the Reports Context', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('4', 'Site.Settings.View', 'Allow users to view the Settings Context', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('5', 'Site.Developer.View', 'Allow users to view the Developer Context', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('6', 'Bonfire.Roles.Manage', 'Allow users to manage the user Roles', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('7', 'Bonfire.Users.Manage', 'Allow users to manage the site Users', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('8', 'Bonfire.Users.View', 'Allow users access to the User Settings', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('9', 'Bonfire.Users.Add', 'Allow users to add new Users', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('10', 'Bonfire.Database.Manage', 'Allow users to manage the Database settings', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('11', 'Bonfire.Emailer.Manage', 'Allow users to manage the Emailer settings', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('12', 'Bonfire.Logs.View', 'Allow users access to the Log details', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('13', 'Bonfire.Logs.Manage', 'Allow users to manage the Log files', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('14', 'Bonfire.Emailer.View', 'Allow users access to the Emailer settings', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('15', 'Site.Signin.Offline', 'Allow users to login to the site when the site is offline', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('16', 'Bonfire.Permissions.View', 'Allow access to view the Permissions menu unders Settings Context', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('17', 'Bonfire.Permissions.Manage', 'Allow access to manage the Permissions in the system', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('18', 'Bonfire.Modules.Add', 'Allow creation of modules with the builder.', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('19', 'Bonfire.Modules.Delete', 'Allow deletion of modules.', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('20', 'Permissions.Administrator.Manage', 'To manage the access control permissions for the Administrator role.', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('21', 'Permissions.Editor.Manage', 'To manage the access control permissions for the Editor role.', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('23', 'Permissions.User.Manage', 'To manage the access control permissions for the User role.', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('24', 'Permissions.Developer.Manage', 'To manage the access control permissions for the Developer role.', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('26', 'Activities.Own.View', 'To view the users own activity logs', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('27', 'Activities.Own.Delete', 'To delete the users own activity logs', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('28', 'Activities.User.View', 'To view the user activity logs', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('29', 'Activities.User.Delete', 'To delete the user activity logs, except own', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('30', 'Activities.Module.View', 'To view the module activity logs', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('31', 'Activities.Module.Delete', 'To delete the module activity logs', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('32', 'Activities.Date.View', 'To view the users own activity logs', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('33', 'Activities.Date.Delete', 'To delete the dated activity logs', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('34', 'Bonfire.UI.Manage', 'Manage the Bonfire UI settings', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('35', 'Bonfire.Settings.View', 'To view the site settings page.', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('36', 'Bonfire.Settings.Manage', 'To manage the site settings.', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('37', 'Bonfire.Activities.View', 'To view the Activities menu.', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('38', 'Bonfire.Database.View', 'To view the Database menu.', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('39', 'Bonfire.Migrations.View', 'To view the Migrations menu.', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('40', 'Bonfire.Builder.View', 'To view the Modulebuilder menu.', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('41', 'Bonfire.Roles.View', 'To view the Roles menu.', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('42', 'Bonfire.Sysinfo.View', 'To view the System Information page.', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('43', 'Bonfire.Translate.Manage', 'To manage the Language Translation.', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('44', 'Bonfire.Translate.View', 'To view the Language Translate menu.', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('45', 'Bonfire.UI.View', 'To view the UI/Keyboard Shortcut menu.', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('48', 'Bonfire.Profiler.View', 'To view the Console Profiler Bar.', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('49', 'Bonfire.Roles.Add', 'To add New Roles', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('66', 'Helloworld.Content.View', 'View Helloworld Content', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('67', 'Helloworld.Content.Create', 'Create Helloworld Content', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('68', 'Helloworld.Content.Edit', 'Edit Helloworld Content', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('69', 'Helloworld.Content.Delete', 'Delete Helloworld Content', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('70', 'Helloworld.Reports.View', 'View Helloworld Reports', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('71', 'Helloworld.Reports.Create', 'Create Helloworld Reports', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('72', 'Helloworld.Reports.Edit', 'Edit Helloworld Reports', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('73', 'Helloworld.Reports.Delete', 'Delete Helloworld Reports', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('74', 'Helloworld.Settings.View', 'View Helloworld Settings', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('75', 'Helloworld.Settings.Create', 'Create Helloworld Settings', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('76', 'Helloworld.Settings.Edit', 'Edit Helloworld Settings', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('77', 'Helloworld.Settings.Delete', 'Delete Helloworld Settings', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('78', 'Helloworld.Developer.View', 'View Helloworld Developer', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('79', 'Helloworld.Developer.Create', 'Create Helloworld Developer', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('80', 'Helloworld.Developer.Edit', 'Edit Helloworld Developer', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('81', 'Helloworld.Developer.Delete', 'Delete Helloworld Developer', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('114', 'Categories.Content.View', 'View Menus and Categories', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('115', 'Categories.Content.Edit', 'View/Create/Update/Remove Menus and Categories', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('132', 'Post.Sitedetails.View', 'View Post Sitedetails', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('133', 'Post.Sitedetails.Create', 'Create Post Sitedetails', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('134', 'Post.Sitedetails.Edit', 'Edit Post Sitedetails', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('135', 'Post.Sitedetails.Delete', 'Delete Post Sitedetails', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('136', 'Post.Content.View', 'View Post Content', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('137', 'Post.Content.Create', 'Create Post Content', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('138', 'Post.Content.Edit', 'Edit Post Content', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('139', 'Post.Content.Delete', 'Delete Post Content', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('140', 'Post.Reports.View', 'View Post Reports', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('141', 'Post.Reports.Create', 'Create Post Reports', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('142', 'Post.Reports.Edit', 'Edit Post Reports', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('143', 'Post.Reports.Delete', 'Delete Post Reports', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('144', 'Post.Settings.View', 'View Post Settings', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('145', 'Post.Settings.Create', 'Create Post Settings', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('146', 'Post.Settings.Edit', 'Edit Post Settings', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('147', 'Post.Settings.Delete', 'Delete Post Settings', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('148', 'Post.Developer.View', 'View Post Developer', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('149', 'Post.Developer.Create', 'Create Post Developer', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('150', 'Post.Developer.Edit', 'Edit Post Developer', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('151', 'Post.Developer.Delete', 'Delete Post Developer', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('162', 'file_manager.Content.View', 'Allows user to access File manager', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('163', 'file_manager.Content.Create', 'Allows user to upload files and create aliases', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('164', 'file_manager.Content.Edit', 'Allows user to edit files and aliases', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('165', 'file_manager.Content.Delete', 'Allows user to delete files and aliases', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('166', 'file_manager.Content.Import', 'Allows user to import files', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('167', 'file_manager.Widget.Download', 'Allows user to download files', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('168', 'file_manager.Settings.View', 'Allows user to access File manager settings', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('169', 'file_manager.Settings.Create', 'Allows user to create settings', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('170', 'file_manager.Settings.Edit', 'Allows user to edit settings', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('171', 'file_manager.Settings.Delete', 'Allows user to delete settings', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('176', 'Bonfire.Blog.View', 'View the blog menu.', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('177', 'Bonfire.Blog.Delete', 'Delete blog entries', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('242', 'Blog.Content.View', 'View Blog Content', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('243', 'Blog.Content.Create', 'Create Blog Content', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('244', 'Blog.Content.Edit', 'Edit Blog Content', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('245', 'Blog.Content.Delete', 'Delete Blog Content', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('246', 'Blog.Reports.View', 'View Blog Reports', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('247', 'Blog.Reports.Create', 'Create Blog Reports', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('248', 'Blog.Reports.Edit', 'Edit Blog Reports', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('249', 'Blog.Reports.Delete', 'Delete Blog Reports', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('250', 'Blog.Settings.View', 'View Blog Settings', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('251', 'Blog.Settings.Create', 'Create Blog Settings', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('252', 'Blog.Settings.Edit', 'Edit Blog Settings', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('253', 'Blog.Settings.Delete', 'Delete Blog Settings', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('254', 'Blog.Developer.View', 'View Blog Developer', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('255', 'Blog.Developer.Create', 'Create Blog Developer', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('256', 'Blog.Developer.Edit', 'Edit Blog Developer', 'active');
+INSERT INTO `bf_permissions` (`permission_id`, `name`, `description`, `status`) VALUES ('257', 'Blog.Developer.Delete', 'Delete Blog Developer', 'active');
+
+
+#
+# TABLE STRUCTURE FOR: bf_post
+#
+
+CREATE TABLE `bf_post` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `messagebody` tinyblob,
+  `date` timestamp NULL DEFAULT NULL,
+  `posted_by` text,
+  `published` tinyint(1) DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+
+INSERT INTO `bf_post` (`id`, `messagebody`, `date`, `posted_by`, `published`) VALUES ('1', 'Test', '2018-04-13 16:50:25', '123', '1');
+INSERT INTO `bf_post` (`id`, `messagebody`, `date`, `posted_by`, `published`) VALUES ('3', 'yugkljk.,/&#039;\r\n,mnx', '2018-04-16 00:00:00', '', '1');
+INSERT INTO `bf_post` (`id`, `messagebody`, `date`, `posted_by`, `published`) VALUES ('4', 'vgfdfgdgghhss', '2018-04-13 22:09:46', '', '1');
+INSERT INTO `bf_post` (`id`, `messagebody`, `date`, `posted_by`, `published`) VALUES ('5', 'Hi There', '2018-04-16 16:17:31', 'Me', '1');
+INSERT INTO `bf_post` (`id`, `messagebody`, `date`, `posted_by`, `published`) VALUES ('6', 'test123', '2018-04-17 16:38:30', 'test123', '1');
+
+
+#
+# TABLE STRUCTURE FOR: bf_posts
+#
+
+CREATE TABLE `bf_posts` (
+  `post_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) NOT NULL,
+  `slug` varchar(255) NOT NULL,
+  `body` text,
+  `created_on` datetime NOT NULL,
+  `modified_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `deleted` tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`post_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+INSERT INTO `bf_posts` (`post_id`, `title`, `slug`, `body`, `created_on`, `modified_on`, `deleted`) VALUES ('1', 'test', 'test', 'test test2', '2018-04-17 17:11:41', '2018-04-17 17:11:59', '0');
+
+
+#
+# TABLE STRUCTURE FOR: bf_role_permissions
+#
+
+CREATE TABLE `bf_role_permissions` (
+  `role_id` int(11) NOT NULL,
+  `permission_id` int(11) NOT NULL,
+  PRIMARY KEY (`role_id`,`permission_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '2');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '3');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '4');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '5');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '6');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '7');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '8');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '9');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '10');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '11');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '12');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '13');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '14');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '15');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '16');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '17');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '18');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '19');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '20');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '21');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '23');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '24');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '26');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '27');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '28');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '29');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '30');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '31');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '32');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '33');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '34');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '35');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '36');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '37');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '38');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '39');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '40');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '41');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '42');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '43');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '44');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '45');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '48');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '49');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '66');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '67');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '68');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '69');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '70');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '71');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '72');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '73');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '74');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '75');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '76');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '77');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '78');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '79');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '80');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '81');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '114');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '115');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '132');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '133');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '134');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '135');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '136');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '137');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '138');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '139');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '140');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '141');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '142');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '143');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '144');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '145');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '146');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '147');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '148');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '149');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '150');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '151');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '162');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '163');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '164');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '165');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '166');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '167');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '168');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '169');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '170');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '171');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '176');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '177');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '242');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '243');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '244');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '245');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '246');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '247');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '248');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '249');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '250');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '251');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '252');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '253');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '254');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '255');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '256');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('1', '257');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('2', '2');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('2', '3');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('6', '2');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('6', '3');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('6', '4');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('6', '5');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('6', '6');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('6', '7');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('6', '8');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('6', '9');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('6', '10');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('6', '11');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('6', '12');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('6', '13');
+INSERT INTO `bf_role_permissions` (`role_id`, `permission_id`) VALUES ('6', '48');
+
+
+#
+# TABLE STRUCTURE FOR: bf_roles
+#
+
+CREATE TABLE `bf_roles` (
+  `role_id` int(11) NOT NULL AUTO_INCREMENT,
+  `role_name` varchar(60) NOT NULL,
+  `description` varchar(255) DEFAULT NULL,
+  `default` tinyint(1) NOT NULL DEFAULT '0',
+  `can_delete` tinyint(1) NOT NULL DEFAULT '1',
+  `login_destination` varchar(255) NOT NULL DEFAULT '/',
+  `default_context` varchar(255) DEFAULT 'content',
+  `deleted` int(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`role_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+
+INSERT INTO `bf_roles` (`role_id`, `role_name`, `description`, `default`, `can_delete`, `login_destination`, `default_context`, `deleted`) VALUES ('1', 'Administrator', 'Has full control over every aspect of the site.', '0', '0', '', 'content', '0');
+INSERT INTO `bf_roles` (`role_id`, `role_name`, `description`, `default`, `can_delete`, `login_destination`, `default_context`, `deleted`) VALUES ('2', 'Editor', 'Can handle day-to-day management, but does not have full power.', '0', '1', '', 'content', '0');
+INSERT INTO `bf_roles` (`role_id`, `role_name`, `description`, `default`, `can_delete`, `login_destination`, `default_context`, `deleted`) VALUES ('4', 'User', 'This is the default user with access to login.', '1', '0', '', 'content', '0');
+INSERT INTO `bf_roles` (`role_id`, `role_name`, `description`, `default`, `can_delete`, `login_destination`, `default_context`, `deleted`) VALUES ('6', 'Developer', 'Developers typically are the only ones that can access the developer tools. Otherwise identical to Administrators, at least until the site is handed off.', '0', '1', '', 'content', '0');
+
+
+#
+# TABLE STRUCTURE FOR: bf_schema_version
+#
+
+CREATE TABLE `bf_schema_version` (
+  `type` varchar(40) NOT NULL,
+  `version` int(4) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`type`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `bf_schema_version` (`type`, `version`) VALUES ('blog_', '2');
+INSERT INTO `bf_schema_version` (`type`, `version`) VALUES ('categories_', '3');
+INSERT INTO `bf_schema_version` (`type`, `version`) VALUES ('core', '43');
+INSERT INTO `bf_schema_version` (`type`, `version`) VALUES ('file_manager_', '2');
+INSERT INTO `bf_schema_version` (`type`, `version`) VALUES ('helloworld_', '2');
+INSERT INTO `bf_schema_version` (`type`, `version`) VALUES ('post_', '2');
+
+
+#
+# TABLE STRUCTURE FOR: bf_sessions
+#
+
+CREATE TABLE `bf_sessions` (
+  `session_id` varchar(40) NOT NULL DEFAULT '0',
+  `ip_address` varchar(45) NOT NULL DEFAULT '0',
+  `user_agent` varchar(120) NOT NULL,
+  `last_activity` int(10) unsigned NOT NULL DEFAULT '0',
+  `user_data` text NOT NULL,
+  PRIMARY KEY (`session_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+#
+# TABLE STRUCTURE FOR: bf_settings
+#
+
+CREATE TABLE `bf_settings` (
+  `name` varchar(30) NOT NULL,
+  `module` varchar(255) NOT NULL,
+  `value` varchar(255) NOT NULL,
+  PRIMARY KEY (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('auth.allow_name_change', 'core', '1');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('auth.allow_register', 'core', '1');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('auth.allow_remember', 'core', '1');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('auth.do_login_redirect', 'core', '1');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('auth.login_type', 'core', 'email');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('auth.name_change_frequency', 'core', '1');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('auth.name_change_limit', 'core', '1');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('auth.password_force_mixed_case', 'core', '0');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('auth.password_force_numbers', 'core', '0');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('auth.password_force_symbols', 'core', '0');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('auth.password_min_length', 'core', '8');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('auth.password_show_labels', 'core', '0');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('auth.remember_length', 'core', '1209600');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('auth.user_activation_method', 'core', '0');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('auth.use_extended_profile', 'core', '0');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('auth.use_usernames', 'core', '1');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('ext.country', 'core', 'US');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('ext.state', 'core', '');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('ext.street_name', 'core', '');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('ext.type', 'core', 'small');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('form_save', 'core.ui', 'ctrl+s/⌘+s');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('goto_content', 'core.ui', 'alt+c');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('mailpath', 'email', '/usr/sbin/sendmail');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('mailtype', 'email', 'text');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('overwrite', 'file_manager', '0');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('password_iterations', 'users', '8');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('protocol', 'email', 'mail');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('sender_email', 'email', '');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('site.languages', 'core', 'a:1:{i:0;s:7:\"english\";}');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('site.list_limit', 'core', '25');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('site.offline_reason', 'core', '');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('site.show_front_profiler', 'core', '1');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('site.show_profiler', 'core', '1');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('site.status', 'core', '1');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('site.system_email', 'core', 'admin@mybonfire.com');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('site.title', 'core', 'My Bonfire');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('smtp_host', 'email', '');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('smtp_pass', 'email', '');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('smtp_port', 'email', '');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('smtp_timeout', 'email', '');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('smtp_user', 'email', '');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('updates.bleeding_edge', 'core', '1');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('updates.do_check', 'core', '1');
+INSERT INTO `bf_settings` (`name`, `module`, `value`) VALUES ('upload_path', 'file_manager', 'files/');
+
+
+#
+# TABLE STRUCTURE FOR: bf_states
+#
+
+CREATE TABLE `bf_states` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` char(40) NOT NULL,
+  `abbrev` char(2) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=64 DEFAULT CHARSET=utf8;
+
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('1', 'Alaska', 'AK');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('2', 'Alabama', 'AL');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('3', 'American Samoa', 'AS');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('4', 'Arizona', 'AZ');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('5', 'Arkansas', 'AR');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('6', 'California', 'CA');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('7', 'Colorado', 'CO');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('8', 'Connecticut', 'CT');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('9', 'Delaware', 'DE');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('10', 'District of Columbia', 'DC');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('11', 'Florida', 'FL');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('12', 'Georgia', 'GA');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('13', 'Guam', 'GU');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('14', 'Hawaii', 'HI');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('15', 'Idaho', 'ID');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('16', 'Illinois', 'IL');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('17', 'Indiana', 'IN');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('18', 'Iowa', 'IA');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('19', 'Kansas', 'KS');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('20', 'Kentucky', 'KY');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('21', 'Louisiana', 'LA');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('22', 'Maine', 'ME');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('23', 'Marshall Islands', 'MH');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('24', 'Maryland', 'MD');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('25', 'Massachusetts', 'MA');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('26', 'Michigan', 'MI');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('27', 'Minnesota', 'MN');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('28', 'Mississippi', 'MS');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('29', 'Missouri', 'MO');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('30', 'Montana', 'MT');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('31', 'Nebraska', 'NE');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('32', 'Nevada', 'NV');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('33', 'New Hampshire', 'NH');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('34', 'New Jersey', 'NJ');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('35', 'New Mexico', 'NM');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('36', 'New York', 'NY');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('37', 'North Carolina', 'NC');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('38', 'North Dakota', 'ND');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('39', 'Northern Mariana Islands', 'MP');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('40', 'Ohio', 'OH');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('41', 'Oklahoma', 'OK');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('42', 'Oregon', 'OR');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('43', 'Palau', 'PW');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('44', 'Pennsylvania', 'PA');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('45', 'Puerto Rico', 'PR');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('46', 'Rhode Island', 'RI');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('47', 'South Carolina', 'SC');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('48', 'South Dakota', 'SD');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('49', 'Tennessee', 'TN');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('50', 'Texas', 'TX');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('51', 'Utah', 'UT');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('52', 'Vermont', 'VT');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('53', 'Virgin Islands', 'VI');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('54', 'Virginia', 'VA');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('55', 'Washington', 'WA');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('56', 'West Virginia', 'WV');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('57', 'Wisconsin', 'WI');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('58', 'Wyoming', 'WY');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('59', 'Armed Forces Africa', 'AE');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('60', 'Armed Forces Canada', 'AE');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('61', 'Armed Forces Europe', 'AE');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('62', 'Armed Forces Middle East', 'AE');
+INSERT INTO `bf_states` (`id`, `name`, `abbrev`) VALUES ('63', 'Armed Forces Pacific', 'AP');
+
+
+#
+# TABLE STRUCTURE FOR: bf_user_cookies
+#
+
+CREATE TABLE `bf_user_cookies` (
+  `user_id` bigint(20) unsigned NOT NULL,
+  `token` varchar(128) NOT NULL,
+  `created_on` datetime NOT NULL,
+  KEY `token` (`token`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `bf_user_cookies` (`user_id`, `token`, `created_on`) VALUES ('2', 'bsiT0tDBbdaLzCKN8YWtmpqQjPvfPwocU0H1Y6gRhyvy8PrNDVB79uSGaWuRTLdcw3OxL2GEt7QuJU2nZEZwUXIhQX84g96e3OFCoDxe43mMImFWKalpv1BcirkGnq2o', '2018-03-03 13:10:32');
+INSERT INTO `bf_user_cookies` (`user_id`, `token`, `created_on`) VALUES ('1', '6djZaMZ0vvRxKNJEznKE58M4NLGRjWU8CLQfRmOOy0tCFayXoIcEqbAgohLYwYFZoQr4PVqzCBH5Q3h9g9cT1lHeGwwFDbr2pkD97SgXt5trepTXKxMHUfndjsWpAm6A', '2018-03-04 18:27:24');
+
+
+#
+# TABLE STRUCTURE FOR: bf_user_meta
+#
+
+CREATE TABLE `bf_user_meta` (
+  `meta_id` int(20) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` bigint(20) unsigned NOT NULL DEFAULT '0',
+  `meta_key` varchar(255) NOT NULL DEFAULT '',
+  `meta_value` text,
+  PRIMARY KEY (`meta_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+
+INSERT INTO `bf_user_meta` (`meta_id`, `user_id`, `meta_key`, `meta_value`) VALUES ('1', '2', 'state', '-');
+INSERT INTO `bf_user_meta` (`meta_id`, `user_id`, `meta_key`, `meta_value`) VALUES ('2', '2', 'country', 'PH');
+INSERT INTO `bf_user_meta` (`meta_id`, `user_id`, `meta_key`, `meta_value`) VALUES ('3', '3', 'state', '-');
+INSERT INTO `bf_user_meta` (`meta_id`, `user_id`, `meta_key`, `meta_value`) VALUES ('4', '3', 'country', 'PH');
+INSERT INTO `bf_user_meta` (`meta_id`, `user_id`, `meta_key`, `meta_value`) VALUES ('5', '4', 'state', '-');
+INSERT INTO `bf_user_meta` (`meta_id`, `user_id`, `meta_key`, `meta_value`) VALUES ('6', '4', 'country', 'PH');
+
+
+#
+# TABLE STRUCTURE FOR: bf_users
+#
+
+CREATE TABLE `bf_users` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `role_id` int(11) NOT NULL DEFAULT '4',
+  `email` varchar(254) NOT NULL,
+  `username` varchar(30) NOT NULL DEFAULT '',
+  `password_hash` char(60) DEFAULT NULL,
+  `reset_hash` varchar(40) DEFAULT NULL,
+  `last_login` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `last_ip` varchar(45) NOT NULL DEFAULT '',
+  `created_on` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `deleted` tinyint(1) NOT NULL DEFAULT '0',
+  `reset_by` int(10) DEFAULT NULL,
+  `banned` tinyint(1) NOT NULL DEFAULT '0',
+  `ban_message` varchar(255) DEFAULT NULL,
+  `display_name` varchar(255) DEFAULT '',
+  `display_name_changed` date DEFAULT NULL,
+  `timezone` varchar(40) NOT NULL DEFAULT 'UM6',
+  `language` varchar(20) NOT NULL DEFAULT 'english',
+  `active` tinyint(1) NOT NULL DEFAULT '0',
+  `activate_hash` varchar(40) NOT NULL DEFAULT '',
+  `force_password_reset` tinyint(1) DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+
+INSERT INTO `bf_users` (`id`, `role_id`, `email`, `username`, `password_hash`, `reset_hash`, `last_login`, `last_ip`, `created_on`, `deleted`, `reset_by`, `banned`, `ban_message`, `display_name`, `display_name_changed`, `timezone`, `language`, `active`, `activate_hash`, `force_password_reset`) VALUES ('1', '1', 'admin@mybonfire.com', 'admin', '$2a$08$XRXCWJplKyuYAfM.ajSFU.l66nu86TmROr2BUy62coBIHz3PLXuzu', NULL, '2018-04-13 21:23:21', '::1', '2018-02-28 18:31:12', '0', NULL, '0', NULL, 'admin', NULL, 'UM6', 'english', '1', '', '0');
+INSERT INTO `bf_users` (`id`, `role_id`, `email`, `username`, `password_hash`, `reset_hash`, `last_login`, `last_ip`, `created_on`, `deleted`, `reset_by`, `banned`, `ban_message`, `display_name`, `display_name_changed`, `timezone`, `language`, `active`, `activate_hash`, `force_password_reset`) VALUES ('2', '1', 'jraymund.niconi@gmail.com', 'joroni', '$2a$08$eZJx9A8M/7e0WS//h5OM8.5adqlPrta0O9rHavet/rfLqOXr0TOJ2', NULL, '2018-04-17 17:06:21', '::1', '2018-02-28 18:33:00', '0', NULL, '0', NULL, 'John Raymund', NULL, 'UM8', 'english', '1', '', '0');
+INSERT INTO `bf_users` (`id`, `role_id`, `email`, `username`, `password_hash`, `reset_hash`, `last_login`, `last_ip`, `created_on`, `deleted`, `reset_by`, `banned`, `ban_message`, `display_name`, `display_name_changed`, `timezone`, `language`, `active`, `activate_hash`, `force_password_reset`) VALUES ('3', '4', 'jraymundd.niconi@gmail.com', 'joroni2', '$2a$08$TU/xnhLTeadM.WT7VQsmwuT1j1.gF53FpUHj/HeqHvEttrfd2emmq', NULL, '2018-04-10 23:29:31', '::1', '2018-04-10 23:29:20', '0', NULL, '0', NULL, 'joroni2', NULL, 'UM8', 'english', '1', '', '0');
+INSERT INTO `bf_users` (`id`, `role_id`, `email`, `username`, `password_hash`, `reset_hash`, `last_login`, `last_ip`, `created_on`, `deleted`, `reset_by`, `banned`, `ban_message`, `display_name`, `display_name_changed`, `timezone`, `language`, `active`, `activate_hash`, `force_password_reset`) VALUES ('4', '4', 'gregballonzo@gmail.com', 'greg', '$2a$08$BBQ4dPr16SYQw9dkzCokl.jDwU3WS8FeQoA0AJto4KEEGWW0IBRB.', NULL, '2018-04-10 23:33:53', '::1', '2018-04-10 23:33:03', '0', NULL, '0', NULL, 'greg', NULL, 'UM8', 'english', '1', '', '0');
+
+

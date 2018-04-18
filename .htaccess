@@ -2,7 +2,8 @@
 IndexIgnore *
 Options +Indexes
 
-<IfModule mod_rewrite.so>
+<IfModule mod_rewrite.c>
+Options +FollowSymlinks
 RewriteEngine On
 RewriteBase /public/
 # RewriteRule ^index\.php$ - [L]
@@ -10,13 +11,6 @@ RewriteRule ^(?!.*?(\.js|\.css|\.xml|\.less|\.png|\.jpg|\.jpeg|\.gif|\.pdf|\.doc
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /joroni_bonfire/index.php [L]
-
-<Directory /files>
-  <Files log.txt>
-    Order allow,deny
-    Deny from all
-  </Files>
-</Directory>
 
 </IfModule>
 

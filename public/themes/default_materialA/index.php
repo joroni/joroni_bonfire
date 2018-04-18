@@ -19,7 +19,7 @@
         </div>
     </div>
     <!-- #END# Page Loader -->
-<!--<div class="container-fluids">-- Start of Main Container -->
+<!--<div class="container-fluids"> Start of Main Container -->
     <?php
     echo theme_view('_sitenav');
 
@@ -33,6 +33,28 @@
             $this->load->helper('categories/categories');
             ?>
                 </div>
+
+
+
+
+                <?php
+                if (!empty($posts) && is_array($posts)) :
+                    foreach ($posts as $post) :
+                ?>
+                <div class="post">
+                    <h2><?php e($post->title); ?></h2>
+                    <?php echo auto_typography($post->body); ?>
+                </div>
+                <?php
+                    endforeach;
+                else :
+                ?>
+                <div class="alert alert-info">
+                    No Posts were found.
+                </div>
+                    <?php
+                    endif;
+                    ?>
     </section>
     <?php
 

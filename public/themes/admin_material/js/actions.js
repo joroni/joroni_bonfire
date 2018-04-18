@@ -1,4 +1,5 @@
 $(function() {
+
     $("body").addClass("theme-black");
     $(".table").addClass("table-responsive");
     checkMobile();
@@ -9,12 +10,27 @@ $(function() {
     });
 });
 
+$(document).ready(function() {
+    $(".nav-collapse").addClass("collapse");
+});
 /*
 $(".btn-navbar").click(function() {
     $(this).toggleClass("collapsed");
     $(".nav-collapse").toggleClass("in").css("height", "auto");
 });
 */
+
+
+$(".navbar-header .bars").click(function() {
+
+    if ($('.navbar-collapse').hasClass('in')) {
+        $(this).removeClass('in').css("height", "0");
+    } else {
+        $(this).addClass('in').css("height", "auto");
+    }
+
+});
+
 
 function checkLoginPage() {
     if ($('#login > form').length !== 0) {
