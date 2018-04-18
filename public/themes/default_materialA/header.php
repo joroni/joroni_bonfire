@@ -1,4 +1,3 @@
-<!doctype html>
 
 
 <head>
@@ -16,7 +15,14 @@ e(isset($meta_description) ? $meta_description : '');
     <meta name="author" content="<?php
 e(isset($meta_author) ? $meta_author : '');
 ?>">
-    <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">-->
+
+
+<!--[if lte IE 8]>
+ 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css"
+<![endif]-->
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
     <link rel="apple-touch-icon" sizes="180x180" href="<?php
 echo base_url();
 ?>apple-touch-icon.png">

@@ -4,9 +4,9 @@
         <div class="navbar-header">
             <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
             <a href="javascript:void(0);" class="bars"></a>
-            <a  href="<?php echo site_url(); ?>" class="navbar-brand">
-                </*?php e(class_exists('Settings_lib') ? settings_item('site.title') : 'Bonfire'); ?*/>
-              <img src="<?php echo img_path(); ?>/images/puma-icon-white.svg" height="30">
+            <a href="<?php echo site_url(); ?>" class="navbar-brand">
+                </*?php e(class_exists( 'Settings_lib') ? settings_item( 'site.title') : 'Bonfire'); ?*/>
+                <img src="<?php echo img_path(); ?>/images/puma-icon-white.svg" height="30">
             </a>
         </div>
         <div class="navbar-collapse collapse" id="navbar-collapse">
@@ -25,6 +25,20 @@
                     <a href="<?php echo site_url('users/profile'); ?>">
                         <?php e(lang('bf_user_settings')); ?>
                     </a>
+                </li>
+
+                <li>
+                    <?php if (isset($current_user->email)) : ?>
+                    <a href="<?php echo site_url(SITE_AREA) ?>">Admin</a>
+                    <?php else :?>
+                    <a href="<?php echo site_url(LOGIN_URL); ?>">
+                        <?php echo lang('bf_action_login'); ?>
+                    </a>
+                </li>
+                <?php endif;?>
+
+                <li>
+                    <a href="<?php echo site_url('/docs') ?>" target="_blank">Docs</a>
                 </li>
                 <li>
                     <a href="<?php echo site_url('logout'); ?>">
@@ -148,7 +162,7 @@
                     </li>
                     <li>
                         <a href="<?php echo site_url('logout'); ?>">
-                        <i class="material-icons">power</i>
+                            <i class="material-icons">power</i>
                             <span>
                                 <?php e(lang('bf_action_logout')); ?>
                             </span>
